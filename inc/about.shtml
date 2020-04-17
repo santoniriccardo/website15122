@@ -1,0 +1,595 @@
+<h1>About this course
+<span class="shortcut">
+&nbsp;[&nbsp; <a href="#DESCRIPTION">Description</a>
+&nbsp;|&nbsp; <a href="#FEEDBACK">How to Do Well</a>
+&nbsp;|&nbsp; <a href="#READINGS">Readings</a>
+&nbsp;|&nbsp; <a href="#SOFTWARE">Software</a>
+&nbsp;|&nbsp; <a href="#GRADING">Grading</a>
+&nbsp;|&nbsp; <a href="#POLICIES">Policies</a>
+&nbsp;|&nbsp; <a href="#HELP">Help</a>
+&nbsp;|&nbsp; <a href="#LO">Learning Objectives</a>
+&nbsp;]
+</span></h1>
+
+<div class="toggler-on">
+<h2 id="DESCRIPTION" class="toggle-base"><span class="toggle-label">Description</span></h2>
+
+<div class="toggle-me">
+This course teaches imperative programming in a C-like language and methods for ensuring the correctness of imperative programs. It is intended for students who are familiar with elementary programming concepts such as variables, expressions, loops, arrays, and functions. Given these building blocks, students will learn the process and techniques needed to go from high-level descriptions of algorithms to correct imperative implementations, with specific applications to basic data structures and algorithms. Much of the course will be conducted in a subset of C amenable to verification, with a transition to full C near the end.
+
+This will be accomplished along three dimensions:
+<ul>
+<li>The main skill you will get out of this course is the ability to write code that is correct by design and accounts for the needs of its application context.  You will learn about deliberate programming as a way to write high quality code, about assessing the performance of a program, and about comparing solutions to satisfy deployment constraints.
+</li>
+<li>As we do so, you will gain exposure to fundamental concepts in Computer Science &mdash; as opposed to programming &mdash; such as abstraction, correctness, complexity, and modularity.  This will also give you a vocabulary to communicate effectively and precisely with other computer scientists.
+</li>
+<li>Our vehicle for achieving these objectives will initially be C0, a safe variant of C, and later C itself.  Using them, you will gain exposure to a number of data structures and algorithms that are used pervasively in computer science.  C is the language of choice for system-level code, and both are representative of the popular imperative programming paradigm.
+</li>
+</ul>
+After completing 15-122, you will be able to take <a href="https://www.cs.cmu.edu/~213/">15-213</a> (<em>Introduction to Computer Systems</em>), <a href="http://www.cs.cmu.edu/~15210/">15-210</a> (<em>Parallel and Sequential Data Structures and Algorithms</em>) and <a href="http://www.cs.cmu.edu/~charlie/courses/15-214/2016-spring/">15-214</a> (<em>Principles of Software System Construction</em>).  Other prerequisites or restrictions may apply.
+
+
+<h3>Prerequisites</h3>
+
+You must have gotten a 5 on the <a href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a">AP Computer Science A exam</a> or passed <a href="http://www.cs.cmu.edu/~112/">15-112</a> (<em>Fundamentals of Programming</em>) or equivalent.  You may also get permission from an advisor if you performed very high on the CS Assessment on Blackboard.  <!--In rare cases, you may receive special permission by the instructors.-->
+
+<br style="margin-bottom:0.5ex">
+It is <b>strongly</b> advised that you either have taken or take at the same time either <a href="https://www.andrew.cmu.edu/course/21-127/">21-127</a> (<em>Concepts of Mathematics</em>) or <a href="http://www.contrib.andrew.cmu.edu/~akwon/teaching/15-151-f16.html">15-151</a> (<em>Mathematical Foundations of Computer Science</em>): historically, students who did not do so ended up learning less, spending considerably more time on the course and earning one letter grade lower than their peers who did, on average.
+
+
+<h3>Past Offerings</h3>
+
+<table class="offerings" style="margin: auto; " border="1">
+  <tr><th style="background-color: initial;"></th>
+    <th>2020</th>
+    <th>2019</th>
+    <th>2018</th>
+    <th>2017</th>
+    <th>2016</th>
+    <th>2015</th>
+    <th>2014</th>
+    <th>2013</th>
+    <th>2012</th>
+    <th>2011</th>
+    <th>2010</th>
+  </tr>
+  <tr><th style="text-align:right">Fall</th>
+    <td style="background-color: initial;"></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/f19/">F'19</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/f18/">F'18</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/f17/">F'17</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/f16/">F'16</a></td>
+    <td><a href="http://www.cs.cmu.edu/~fp/courses/15122-f15/">F'15</a></td>
+    <td><a href="http://www.cs.cmu.edu/~rjsimmon/15122-f14">F'14</a></td>
+    <td>F'13</td>
+    <td><a href="http://www.cs.cmu.edu/~fp/courses/15122-f12/">F'12</a></td>
+    <td>F'11</td>
+    <td><a href="http://www.cs.cmu.edu/~fp/courses/15122-f10/">F'10</a></td>
+  </tr>
+  <tr><th style="text-align:right">Summer</th>
+    <td style="background-color: initial;"></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/n19/">N'19</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/n18/">N'18</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/n17/">N'17</a></td>
+    <td><a href="http://www.cs.cmu.edu/afs/cs/academic/class/15122-n16/www/">N'16</a></td>
+    <td><a href="http://www.cs.cmu.edu/~rjsimmon/15122-m15">M'15</a></td>
+    <td><a href="http://www.cs.cmu.edu/~rjsimmon/15122-m14">M'14</a></td>
+    <td>M'13</td>
+    <td><a href="http://www.cs.cmu.edu/~jamiemmt/teaching/su-122/">M'12</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/s11/">S'11</a></td>
+    <td style="background-color: initial;"></td>
+  </tr>
+  <tr><th style="text-align:right">Spring</th>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/s20/">S'20</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/s19/">S'19</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/s18/">S'18</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/s17/">S'17</a></td>
+    <td><a href="http://www.cs.cmu.edu/~rjsimmon/15122-s16">S'16</a></td>
+    <td><a href="http://www.cs.cmu.edu/~rjsimmon/15122-s15">S'15</a></td>
+    <td><a href="http://symbolaris.com/course/pic14.html">S'14</a></td>
+    <td><a href="http://symbolaris.com/course/pic13.html">S'13</a></td>
+    <td><a href="http://www.andrew.cmu.edu/course/15-122/">S'12</a></td>
+    <td><a href="http://www.cs.cmu.edu/~15122-archive/s11/">S'11</a></td>
+    <td style="background-color: initial;"></td>
+  </tr>
+</table>
+
+</div>
+
+
+<h2 id="FEEDBACK" class="toggle-base"><span class="toggle-label">How to do Well in this Course</span></h2>
+
+<div class="toggle-me">
+Our goals are for you to succeed in this course and to teach you skills and concepts that will contribute to your success in life.  To this end, we are providing you with lots of resources and the knowledge that comes from years of experience.  Talking to some of the thousands of students who took this course before you, here's some advice that they found particularly useful:
+<ul>
+<li><em>Do not stress over grades</em>: your goal is to learn new and exciting things.  Good grades follow naturally from deep learning (but not necessarily vice versa).  ...and employers care about what you know not what grade you got.</li>
+<li><em>Participate</em>: you will get a lot more from this class if you ask questions and engage with the course staff than if you are a fly on the wall &mdash; and it will be more fun.</li>
+<li><em>Manage your time wisely</em>: allocate sufficient time for homework and learning.  Little adjustments can save you a whole lot of time later and have a huge impact on your performance.  In particular, use class time to learn, review the material presented in lecture the same day, and schedule time for homework proactively.</li>
+<li><em>Start homework early</em>: racing against a deadline is so stressful!  Starting early will remove that stress, lead to deeper learning and give you time to improve your solution if you feel like it.</li>
+<li><em>Get all the help you need</em>: we provide plenty of resources to help you succeeed in this course &mdash; <a href="home.shtml#OH">office hours every day</a>, <a class="qatool" href="">online help</a> 24-7, and <a href="staff.shtml">friendly staff</a> when you need them.  Take advantage of them: they are there for you!  The only thing we ask is that you plan a bit ahead: helping students takes time and there are not enough of us if everybody waits up to the deadline.</li>
+<li><em>Make time for fun</em>: take a break from studying at least once a day &mdash; meet with friends, go for a walk, play sports, whatever gets you to reset your mind.</li>
+</ul>
+
+<h3>Feedback</h3>
+
+It is our goal to make this course successful, stimulating and enjoyable.  If at any time you feel that the course is not meeting your expectations or you want to provide feedback on how the course is progressing for you, please <span class="contactInstr">contact us</span>.  If we are not aware about a problem, we won't know to fix it.  If you would like to provide anonymous comments, please use <a href="index.html">the feedback form on the course home page</a> or slide a note under our doors.  Comments of general interest will be answered on the <a class="qatool" href="">course discussion board</a>.
+</div>
+
+
+<h2 id="READINGS" class="toggle-base"><span class="toggle-label">Readings</span></h2>
+
+<div class="toggle-me">
+There is no textbook for this course.  Lecture notes and other resources are provided through the <a href="schedule.shtml">Schedule</a> tab of this page.  We do not require students to read lecture notes before lecture, but those who are interested in reading ahead can certainly do so.
+</div>
+
+
+<h2 id="SOFTWARE" class="toggle-base"><span class="toggle-label">Software</span></h2>
+
+<div class="toggle-me">
+<h3>The C0 Language</h3>
+
+In the first nine weeks, the course uses <a href="http://c0.typesafety.net/">C0</a>, a safe subset of C augmented with a layer to express contracts.  This language has been specifically designed to support the student <a href="#LO">learning objectives in this course</a>.  It provides garbage collection (freeing students from dealing with low-level details of explicit memory management), fixed range modular integer arithmetic (avoiding complexities of floating point arithmetic and multiple data sizes), an unambiguous language definition (guarding against relying on undefined behavior), and contracts (making code expectations explicit and localizing reasoning).
+<table style="width: 100%;">
+<tr style="vertical-align: top;"><td style="width: 30%;">
+<ul>
+<li><a href="http://c0.typesafety.net/">C0 Language Reference</a></li>
+<li><a href="http://c0.typesafety.net/tutorial/">C0 Tutorial</a></li>
+<li><a href="http://c0.typesafety.net/doc/c0-libraries.pdf">C0 Library Reference</a></li>
+<li><a href="http://c0.typesafety.net/tutorial/Debugging-C0-Programs.html">Debugging C0 Programs</a></li>
+<li><a href="misc/unit_testing_notes.pdf">Testing programs</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="http://c0.typesafety.net/tutorial/C0-at-CMU.html">C0 at CMU</a></li>
+<li><a href="http://c0.typesafety.net/downloads.html">C0 on your own laptop</a></li>
+</ul>
+</td></tr>
+</table>
+
+
+<h3>The C Language</h3>
+
+In the last six weeks, the course transitions to C in preparation for subsequent systems courses. Emphasis is on transferring positive habits developed in the use of C0, and on practical advice for avoiding the pitfalls and understanding the idiosyncrasies of C. We use the <a href="http://valgrind.org/"><tt>valgrind</tt></a> tool to test proper memory management.
+<ul>
+<li><a href="http://c0.typesafety.net/tutorial/From-C0-to-C:-Basics.html">From C0 to C: Basics tutorial</a></li>
+<li><a href="http://www.cplusplus.com/reference/clibrary/">C Language Libraries</a>
+  <ul>
+  <li><a href="http://www.cplusplus.com/reference/clibrary/cstring/">C string library <code>&lt;string.h&gt;</code></a></li>
+  </ul></li>
+<li><a href="http://pubs.opengroup.org/onlinepubs/9699919799/">POSIX library standard</a> &mdash; Unix standard library definitions including a library search functionality</li>
+</ul>
+
+
+<h3>Programming Environments</h3>
+
+You are welcome to use any programming environment that suits you to write your programming assignments.  However, all programming homework will be graded by running them on a Unix system using <a class="autolab" href="">Autolab</a> &mdash; you may want to make sure they work on <a href="http://c0.typesafety.net/tutorial/C0-at-CMU.html">Andrew Unix</a>.  Popular environment choices include <a href="https://www.gnu.org/software/emacs/">emacs</a>, <a href="http://www.vim.org/">vim</a> and <a href="https://www.sublimetext.com/">sublime</a>, but you should use what works for you: an environment that allows you to write code quickly and efficiently.  Here are some useful links:
+
+<table style="margin-top: 1ex; margin-left: 1em;">
+<tr><th>Unix</th><th style="padding-left: 1em;">Emacs</th></tr>
+<tr style="vertical-align: top;"><td>
+<ul style="margin: 0; padding-left: 1.5em;">
+<li><a href="http://c0.typesafety.net/doc/linux_quickref.pdf">Linux Commands Reference Card</a></li>
+</ul>
+</td><td style="padding-left: 1em;">
+<ul style="margin: 0; padding-left: 1.5em;">
+<li><a href="https:/niveditc.github.io/pages/emacs.html">Emacs Basics</a></li>
+<li><a href="https://www.shortcutfoo.com/app/tutorial/emacs">Game for learning emacs shortcuts</a></li>
+<li><a href="http://www.linuxhelp.net/guides/emacs">Emacs Help Guide</a></li>
+</ul>
+</td></tr>
+</table>
+</div>
+
+<h2 id="GRADING" class="toggle-base"><span class="toggle-label">Grading</span></h2>
+
+<div class="toggle-me">
+This is a <b>10 unit</b> course.
+
+<h3>Tasks and Percentages</h3>
+<ul>
+<li><b>25 homework assignments: 45%</b>
+  <ul>
+  <li>13 weekly <em>written assignments</em> (due
+  on <a class="gradescope" href="">Gradescope</a> Mondays at 9pm
+  Pittsburgh time &mdash; strict!)</li>
+  <li>12 weekly <em>programming assignments</em> (due on <a class="autolab" href="">Autolab</a> Thursdays at 9pm Pittsburgh time &mdash; strict!)</li>
+  </ul>
+  To encourage good work and integrity, the instructors may invite students to their offices to explain their solutions. Should this happen, the students' explanations will become part of their grades for that homework.
+  <ul>
+  <li>Assignments are individual unless explicitly instructed.
+  </li></ul>
+</li>
+
+<li><b>2 midterm exams: 12.5% each</b>, in class, closed books, on <script>document.write(formatDateLong(exms[0].date));</script> and <script>document.write(formatDateLong(exms[1].date));</script></li>
+<li><b>Final exam: 25%</b>, 3 hours, closed books, on <script>document.write(formatDateLong(final.date));</script></li>
+
+<li><b>Labs and quizzes: 5%</b>
+<br>Each lab is graded on a 0-4 point scale, assigned as follows:
+<ul>
+  <li><span style="color:green;">4 points</span> for completing all exercises</li>
+  <li><span style="color:green;">3 points</span> for completing sufficiently many exercises</li>
+  <li><span style="color:green;">1.5 point</span> for completing some exercises but not quite enough to get a good practice</li>
+  <li><span style="color:red;">0 points</span> for not completing any exercise, not showing up, or coming to the wrong section</li>
+</ul>
+Each quiz is graded based on the number of questions it asks.  Use the <a href="quiz.shtml">quiz page</a> to test your configuration and take there current quiz (if there is one).
+<br>
+<em>All you need to earn the 5% grade for this portion of the course is to accumulate <span style="color:green;">50 points</span> overall.</em>  There are many more points than that for grabs, so no sweat if you do poorly in one quiz or miss a lab.  Do the math: the course has
+  <ul>
+  <li>13 graded labs</li>
+  <li>a few quizzes (done during lecture and/or recitation)</li>
+  </ul></li>
+</ul>
+We are aiming to have homework and exams graded within two days of submission.
+
+  <div id="courseworkCalendar" style="page-break-inside:avoid; margin-top:1ex;"></div>
+
+
+<h3>Accessing and Monitoring your Grades</h3>
+
+Posted grades are accessible by clicking on the <a class="grades" href="">Grades</a> tab of this page.  After authenticating, you will be able to see your current grades and a projection of where you are headed given your past performance in the class.  Use this application to take action if the trajectory does not lead to the grade you are hoping for.
+
+
+<h3>Evaluation Criteria</h3>
+
+Your assignments and exams are evaluated on the basis of:
+<ul>
+<li><b>Correctness</b>: Your arguments should make sense, your proofs should be valid, and your program should work in the reference environment.</li>
+<li><b>Elegance</b>: Written material should be of the same quality as what a professional would write.  No typos, no bad grammar, clarity is paramount.  You are also expected to write code with good programming style. See <a href="misc/styleguide.pdf">these notes</a> about what constitutes good style.
+<br style="margin-bottom: 0.5ex">
+For a small subset of assignments, the course staff will review all final submissions by hand. If there are significant style issues, they may give a non-passing grade on style, accompanied by a “FIX STYLE” annotations in their notes. Students who are told to fix their style must address these issues and discuss their revisions with a TA <b>within 5 days</b> of the homework grades being posted. Any TA or instructor can do style re-grading at any <a href="home.shtml#OH">office hour</a>; you do not have to go to the TA that assigned the grade.</li>
+</ul>
+
+<!--
+<span style="color:green"><b>Bonus points</b></span>: We seek to promote good time and risk management habits.  You will receive an <span style="color:green">extra <b>2%</b></span> of the <em>earned</em> grade of a homework for each 12-hour period you submit it ahead of the deadline, starting the countdown 4 days prior to the deadline.
+-->
+
+<h3>Late Policy</h3>
+
+This is a fast-paced course.  The late policy has the purpose to help students from falling behind.
+<ul>
+<li>There are <b>no late days for written assignments</b>, but written homework will be accepted up to 12 hours past the deadline and eligible for 50% of the points.  Gradescope handles late submissions automatically &mdash; you don't have to email the course staff, just turn in the assignment between 1 second late and 12 hours after the deadline.</li>
+<li>Each student has <b>3 late days for programming assignments</b> but you may use <b>at most one late day for each individual assignment</b>.  This  means that for exactly 3 programming deadlines you can turn in your assignment within 24 hours after the deadline. Autolab handles these late days automatically &mdash; you don't have to email the course staff, just turn in the assignment between 1 second late and 24 hours after the deadline.  You can find how many late days you have used by clicking on "Gradebook" in <a class="autolab" href="">Autolab</a>.  Once you have ran out of late days, <a class="autolab" href="">Autolab</a> will accept and grade late submissions but will assign them 0 points.
+<p>
+We strongly advise students not to use late days in the first half of the course.  Later assignments are more challenging and many courses have lots of deliverables towards the end of the semester.  The second half of the semester is where late days are most needed.
+</p>
+</li>
+</ul>
+Aside from this, there will be no extensions on assignments in general.  If you think you really <em>really</em> need an extension on a particular assignment, <span class="contactInstr">contact the instructors</span> as soon as possible and before the deadline.  Please be aware that extensions are entirely discretionary and will be granted only in exceptional circumstances outside of your control (e.g., due to severe illness or major personal/family emergencies, but not for competitions, club-related events or interviews).  The instructors will require confirmation from University Health Services or your academic advisor, as appropriate.
+
+<p>
+<!--There are <b>no late days</b>.  Assignments submitted past the deadline will get a grade of 0.
+<ul>
+<li-->Nearly all situations that make you run late on an assignment homework can be avoided with <a href="http://www.cmu.edu/acadev/fastfact/">proper planning</a> &mdash; often just starting early.  Here are some examples:
+  <ul>
+  <li><em>I have so many deadlines this week</em>: you know your deadlines ahead of time &mdash; plan accordingly.</li>
+  <li><em>It's a minute before the deadline and the network is down</em>: you always have multiple submissions &mdash; it's foolish to wait for the deadline for your <em>first</em> submission.</li>
+  <li><em>My computer crashed and I lost everything</em>: Use Dropbox or similar to do real-time backup &mdash; recover your files onto AFS and finish your homework from a cluster machine.</li>
+  <li><em>My fraternity/sorority/club has that big event that is taking all my time</em>: Schedule your extra-curricular activities around your classes, not vice versa.</li>
+  <!--li><em>I got sick</em>: start early and make use of bonus points</li>
+</ul></li>
+<li>Use bonus points as your insurance policy for unforeseen situations.</li-->
+</ul>
+</p>
+
+<h3>Grade Appeals</h3>
+
+We make mistakes too!
+<br>
+After each exam and homework assignment is graded, you will be able to access your score by clicking on the <a class="grades" href="">Grades</a> tab of this page.  We will make the utmost effort to be fair and consistent in our grading.  If you notice any grading mistake, proceed as follows:
+<ul>
+<li>Blatant grading mistakes (e.g., the rubric says X, and you wrote X exactly) can be corrected by any TA in <a href="home.shtml#OH">office hours</a>.</li>
+
+<li>For any other grading issues, you must request a regrade:
+  <ul>
+  <li>Compose a properly typed letter explaining where and why you think there was a mistake in grading.  Make sure to specify which homework or exam this appeal is for.  Write <b>at most 3 lines</b> for each response you are disputing.  <b>Date and sign your letter by hand</b>.</li>
+  <li>Hand-deliver a signed <b>hardcopy</b> of this letter to <script>var aa =
+    staffByRole("aa")[0]; document.write(aa.name);</script> in <script>document.write(aa.office);</script>. Slide it under her door if she is not in.</li>
+</ul></li>
+</ul>
+Verbal, email or handwritten requests will not be accepted.
+<p>
+All regrade requests must be recieved within <b>5 days</b> of the work
+being handed back on <a class="gradescope" href="">Gradescope</a>
+or <a class="autolab" href="">Autolab</a>, which we will announce in
+a <a class="qatool qatoolname"></a> post.</p>
+
+
+<h3>Final Grades</h3>
+
+This class is not curved.  However, to ensure consistency across semesters, we set our grading standards in such a way as to compensate for the relative difficulty of exams.
+<p>
+What follows is a <b>rough guide</b> to how course grades will be established, not a precise formula &mdash; we will fine-tune cutoffs and other details as we see fit after the end of the course.  This is meant to help you set expectations and take action if your trajectory in the class does not take you to the grade you are hoping for (see also the <a class="grades" href="">Grades</a> tab on this page).  So, here's a <b>rough</b>, <b><em>very rough</em></b> heuristics about the correlation between final grades and total scores:
+<ul style="margin-top: 0.5ex; margin-bottom: 0.5ex;">
+<li>A: above 90%</li>
+<li>B: 80-90%</li>
+<li>C: 70-80%</li>
+<li>D: 60-70%</li>
+</ul>
+This heuristic assumes that the makeup of a student’s grade is not wildly anomalous: exceptionally low overall scores on exams, programming assignments, or written assignments will be treated on a case-by-case basis.  In particular, no student will get an A with an exam average below 80% (no matter how high his/her total score).  Furthermore, students who are unable to demonstrate a basic proficiency with the C language in the last few programming assignments will receive a D in the class (this is because 15-122 is a prerequisite to 15-213, a very C-intensive course).
+For reference, almost a quarter of the students who received a B in Fall 2014 had a 90-100% average on programming assignments, an 80-90% average on written homeworks, and a 70-80% average on exams.
+</p>
+Precise grade cutoffs will not be discussed at any point during or after the semester.  For students very close to grade boundaries, instructors may, at their
+discretion, consider participation in lecture and recitation, exam performance and overall grade trends when assigning the final grade.
+
+
+<h3>Academic Integrity</h3>
+<a name="AIP"></a>
+
+You are expected to comply with the <a href="http://www.cmu.edu/policies/documents/Academic%20Integrity.htm">University Policy on Academic Integrity and Plagiarism</a> (see also <a href="http://www.cmu.edu/student-affairs/theword/comm_standards/standards.html">The Word</a> and <a href="http://www.cmu.edu/academic-integrity/understanding/cmu.html">Understanding Academic Integrity</a>).
+<p>
+The university policies and procedures on academic integrity will be applied rigorously.  All students are required to fill out a <a href="misc/acad.pdf">form</a> as part of their first assignment indicating that they understand and accept this policy.
+</p><p>
+The value of your degree depends on the academic integrity of yourself and your peers in each of your classes. It is expected that, unless otherwise instructed, the work you submit as your own is your own work and not someone else’s work or a collaboration between yourself and other(s).
+</p><p>
+You are allowed to discuss homework assignments <b>at a high level</b> with other students in person (<i>never by text or other forms of messaging</i>). However, in order to ensure that the work you submit is still your own, we insist that you adhere to a <em>whiteboard policy</em> regarding these discussions:
+<ul>
+<li>You are not allowed to take any notes, files, pictures or other records away from the discussion, nor shall you memorize answers.</li>
+<li>Writing code or pseudo-code on a whiteboard is never permitted.  You may only draw diagrams.</li>
+<li>You are not allowed to write any code on a computer while discussing ideas with another student</li>
+<li>You must wait some time (4 hours is a safe heuristic) before writing up or coding your own solution.</li>
+</ul>
+For example, you may work on a homework at the whiteboard with another student, but then you must erase the whiteboard, go home, wait 4 hours, and write up your solution individually. We take your ability to recreate the solution independently as proof that you understand the work that you submit.
+</p><p>
+This policy is our attempt to balance the tension between the benefits of group work and the benefits of individual work. We ask that you obey the spirit of the policy, as well as the letter: ensure that all work you submit is your own and that you fully understand the solution. This is in your best interest: the exams constitute a significant part of your final grade, they will be timed, and they will draw heavily on the terminology, concepts, and techniques that are exercised in homework. It is unlikely that you will be able to do well on the exams if you do not take full advantage of the learning opportunity afforded by the homework assignments.  Moreover, we will aggressively pursue violations.
+</p><p>
+Please read
+the <a href="http://www.cmu.edu/policies/documents/Academic%20Integrity.htm">University
+      Policy on Academic Integrity</a> carefully to understand the
+penalties associated with academic dishonesty at Carnegie Mellon. In
+this class, cheating/copying/plagiarism means copying all or part of a
+program or homework solution from another student or unauthorized
+source such as the Internet, having someone else do a homework or take
+an exam for you, knowingly giving such information to another student,
+reusing answers or solutions from previous editions of the course, or
+giving or receiving unauthorized information during an examination. In
+general, each solution you submit (quiz, written assignment,
+programming assignment, midterm or final exam) must be your own
+work. In the event that you use information written by others in your
+solution, you must cite the source of this information (and receive
+prior permission if unsure whether this is permitted). It is
+considered cheating to compare complete or partial answers, copy or
+adapt others' solutions, or sit near another person who is taking (or
+has taken) the same course and complete the assignment together.
+Working on code together, showing code to another student and looking
+at another student's code are considered cheating.  If you need help
+debugging, go to <a href="home.shtml#OH">office hours</a> or make a
+post on <a class="qatool qatoolname"></a>.  It is also considered
+cheating for a repeating student to reuse one's solutions from a
+previous semester, or any instructor-provided sample solution.  It is
+a violation of this policy to hand in work for other students.
+</p><p>
+Your course instructor reserves the right to determine an appropriate penalty based on the violation of academic dishonesty that occurs.  Penalties are severe: a typical violation of the university policy results in the student failing this course, but may go all the way to expulsion from Carnegie Mellon University. If you have any questions about this policy and any work you are doing in the course, please feel free to <span class="contactInstr">contact the instructors</span> for help.
+</p><p>
+We will be using the <a href="https://theory.stanford.edu/~aiken/moss/">Moss</a> system to detect software plagiarism.  Whenever a programming assignment is similar to a homework from a previous course edition, we will running MOSS on all submissions of that edition as well.
+</p><p>
+It is not considered cheating to clarify vague points in assignment writeups, lectures, lecture notes, or to give help or receive help in using the computer systems, compilers, debuggers, profilers, or other facilities, but you must refrain from looking at other students' code while you are getting or receiving help for these tools. It is not cheating to review graded assignments or exams with students in the same class as you, but it is considered unauthorized assistance to share these materials between different iterations of the course.  Do not post code from this course publicly (e.g., to Bitbucket or GitHub).
+</p>
+
+<h3>Repeat Students</h3>
+If you took this course in full or in part in a past semester, we ask that you archive your previous work and do not look at it.  In particular, copying one's own solutions from an earlier semester is a violation of the academic integrity policy and will be persecuted as such.  Doing so may save time close to a deadline but it will not have the effect of learning the material, which will be a serious handicap in exams.
+</div>
+
+<h2 id="POLICIES" class="toggle-base"><span class="toggle-label">Other Policies</span></h2>
+
+<div class="toggle-me">
+<h3>Class presence and participation</h3>
+
+Active participation by you and other students will ensure that everyone has the best learning experience in this class. We may take participation in lecture and recitation into account when setting final grades.  Fire safety rules require that we never exceed the stated capacity of a classroom or cluster.  For this reason, we require that you attend the lecture, lab, and recitation  <em>you are registered for</em>.
+
+<h3>Laptops and mobile devices</h3>
+
+As research on learning shows, unexpected noises and movement automatically divert and capture people’s attention, which means you are affecting everyone's learning experience if your cell phone, pager, laptop, etc, makes noise or is visually distracting during class.  Therefore, please silence all mobile devices during class. You may use laptops for note-taking only, but  please do so from the back of the classroom. Do not work on assignments for this or any other class while attending lecture or recitation.
+
+
+<h3>Students with disabilities</h3>
+
+If you wish to request an accommodation due to a documented disability, please inform your instructor and contact <a href="https://www.cmu.edu/disability-resources/">Disability Resources</a> as soon as possible (<script>document.write(eMail(MEA("access", "andrew", "cmu", "edu")));</script>).  Once your accommodation has been approved, you will be able to request extra-time for each exam separatelyby <a href="https://rainier.accessiblelearning.com/cmu">filling this form</a> a week in advance.
+</div>
+
+<h3>Research to Improve the Course</h3>
+
+<p>
+For this course, we are conducting research on student learning.  This research will involve your coursework. You will not be asked to do anything above or beyond the normal learning activities and assignments that are part of this course. You are free not to participate in this research, and your participation will have no influence on your grade for this course or your academic career at CMU. If you choose not to participate in the research, you must still complete all required coursework, but your data will not be included in the research analyses. Participants will not receive any compensation. The data collected as part of this research will include student grades. All analyses of data from participants' coursework will be conducted after the course is over and final grades are submitted. The <a href="http://www.eberly.cmu.edu/">Eberly Center</a> may provide support on this research project regarding data analysis and interpretation. To minimize the risk of breach of confidentiality, the Eberly Center will never have access to data from this course containing your personal identifiers. All data will be analyzed in de-identified form and presented in the aggregate, without any personal identifiers. Please contact Dr. Chad Hershock (<script>document.write(eMail(MEA("hershock", "cmu", "edu")));</script>) or <span class="contactInstr">us</span> if you have questions or concerns about your participation.
+</p>
+
+<h2 id="HELP" class="toggle-base"><span class="toggle-label">Getting Help</span></h2>
+
+<div class="toggle-me">
+<h3>Personal Health</h3>
+<b>Take care of yourself.</b>
+<p>
+Do your best to maintain a healthy lifestyle this semester by eating well, exercising, avoiding drugs and alcohol, <a href="https://www.nytimes.com/2018/08/13/well/an-underappreciated-key-to-college-success-sleep.html">getting enough sleep</a> and taking some time to relax. This will help you achieve your goals and cope with stress.
+</p><p>
+All of us benefit from support during times of struggle. You are not alone. There are many helpful resources available on campus and an important part of the college experience is learning how to ask for help. Asking for support sooner rather than later is often helpful.
+</p><p>
+If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, we strongly encourage you to seek support. Counseling and Psychological Services (CaPS) is here to help: call 412-268-2922 and visit their <a href="http://www.cmu.edu/counseling/">website</a>. Consider reaching out to a friend, faculty or family member you trust for help getting connected to the support that can help.
+</p><p>
+If you or someone you know is feeling suicidal or in danger of self-harm, call someone immediately, day or night:
+<dl compact>
+<dt><b>CaPS:</b> 412-268-2922</dt>
+<dt><b>Re:solve Crisis Network:</b> 888-796-8226</dt>
+<dt><b>If the situation is life threatening,</b> call the police:</dt>
+    <ul>
+    <li>On campus (CMU Police): 412-268-2323</li>
+    <li>Off campus: 911</li>
+    </ul>
+</dl>
+If you have questions about this or your coursework, please <span class="contactInstr">let us know</span>.
+</p>
+
+
+<h3>Communication</h3>
+
+For assistance with the written or oral communication assignments in
+this class, visit the Global Communication Center (GCC).  GCC tutors
+can provide instruction on a range of communication topics and can
+help you improve your papers and presentations.  The GCC is a free
+service, open to all students, and located in Hunt library.  You can
+make tutoring appointments directly on the <a href="http://www.cmu.edu/gcc">GCC
+website</a>.
+You may also visit the GCC website to find out about communication
+workshops offered throughout the academic year.
+
+
+<h3>External Academic Support</h3>
+
+The <a href="https://www.cmu.edu/acadev">Office of Academic
+  Development</a> is providing various services aimed at helping
+students master the contents of this course.  These optional
+services are free and voluntary.  They are led by trained
+leaders who have successfully completed the course.  Leaders are not
+members of the course staff.  These services are are designed to supplement
+&mdash; not replace &mdash; class lectures and recitations.  They do
+not cover homework.
+<dl>
+<dt><a href="https://www.cmu.edu/acadev/supp-inst/">Supplemental Instruction (SI)</a></dt>
+<dd>is a weekly session in which the leader prepares review material
+  based on the current course content, but adapts the focus of the
+  session based on the attendees' questions and requests.</dd>
+
+<dt><a href="https://www.cmu.edu/acadev/excel/">EXCEL groups</a></dt>
+<dd>are formalized, small group study sessions that meet once a week. They consist of approximately nine students and are interactive and geared specifically to the group members. Therefore, only pre-registered students will be allowed to attend. If a group is full, you will be wait-listed until a spot becomes available or another group is formed. In order to establish and maintain a cohesive group, each EXCEL group member must consistently attend and actively participate in the sessions of his or her assigned group.</dd>
+
+<dt><a href="https://www.cmu.edu/acadev/tutoring/">Peer Tutoring</a></dt>
+<dd>Students can drop in between 8:30pm and 11:00pm Sundays through Thursdays at select residence halls and other campus locations. No appointment is necessary, just walk-in.</dd>
+</dl>
+Students often seek help from <b>upperclassmates</b> who have successfully
+completed the course.  While we don't discourage this kind of help, it
+is subject to the <a href="#AIP">academic integrity policy of the
+  course</a>. In particular, upperclassmates found to violate this
+policy will be reported and will incur a grade penalty.
+</div>
+
+
+<h2 id="LO" class="toggle-base"><span class="toggle-label">Learning Objectives</span></h2>
+
+<div class="toggle-me">
+<style>
+/* list styling, adapted from http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/*/
+ol.start, ol.continue, ol.sublist {
+  margin-left:   0;   /* Remove the default left margin */
+  padding-left:  0;   /* Remove the default left padding */
+}
+ol.start {
+  counter-reset: li;  /* Initiate a counter */
+}
+ol.sublist {
+  counter-reset: sublist; /* Initiate a counter */
+  margin-top: 0.25ex;
+}
+ol.start > li, ol.continue > li, ol.sublist > li {
+  position: relative; /* Create a positioning context */
+  padding: 0 8px;     /* Add some spacing around the content */
+  list-style: none;   /* Disable the normal item numbering */
+}
+ol.start > li, ol.continue > li {
+  margin: 0 0 0 2em;  /* Give each list item a left margin to make room for the numbers */
+}
+ol.sublist > li {
+  margin: 0 0 0 1.1em;  /* Give each list item a left margin to make room for the numbers */
+}
+ol.start > li:before, ol.continue > li:before, ol.sublist > li:before {
+  position: absolute;  /* Position and style the number */
+  top: 0px;
+  width: 2em;
+  padding: 0 4px;
+}
+ol.start > li:before, ol.continue > li:before {
+  content: counter(li) ". "; /* Use the counter as content */
+  counter-increment: li;     /* Increment the counter by 1 */
+  left: -2.3em;              /* Position and style the number */
+  text-align: right;
+}
+
+ol.sublist > li:before {
+  content: "(" counter(sublist, lower-alpha) ")"; /* Use the counter as content */
+  counter-increment: sublist;   /* Increment the counter by 1 */
+  left: -1.8em;             /* Position and style the number */
+  text-align: center;
+}
+</style>
+
+
+<h3>Computational Thinking</h3>
+
+Students who complete this course should be able to explain abstraction and other key computer science concepts, apply these fundamental concepts as problem-solving tools, and wield <em>contracts</em> as a tool for reasoning about the safety and correctness of programs. In particular, we expect students to be able to:
+<ol class="start">
+<li>develop contracts (preconditions, postconditions, assertions, and loop invariants) that establish the safety and correctness of imperative programs.</li>
+<li>develop and evaluate proofs of the safety and correctness of code with contracts.</li>
+<li>develop and evaluate informal termination arguments for programs with loops and recursion.</li>
+<li>evaluate claims of both asymptotic complexity and practical efficiency of programs by running tests on different problem sizes.</li>
+<li>define the concept of programs as data, and write programs that use the concept.</li>
+<li>defend the use of abstractions and interfaces in the presentation of algorithms and data structures.</li>
+<li>identify the difference between <em>specification</em> and <em>implementation</em>.</li>
+<li>compare different implementations of a given specification and different specifications that can be applied to a single implementation.</li>
+<li>explain data structure manipulations using data structure invariants.</li>
+<li>identify and evaluate the use of fundamental concepts in computer science as problem-solving tools:
+  <ol class="sublist">
+  <li>order (sorted or indexed data),</li>
+  <li>asymptotic worst case, average case, and amortized analysis,</li>
+  <li>randomness and (pseudo-)random number generation, and</li>
+  <li>divide-and-conquer strategies.</li>
+</ol></li>
+</ol>
+
+
+<h3>Programming Skills</h3>
+
+Students who complete this course should be able to read and write code for imperative algorithms and data structures. In particular, we expect students to be able to:
+<ol class="continue">
+<li>trace the operational behavior of small imperative programs.</li>
+<li>identify, describe, and effectively use basic features of C0 and C:
+  <ol class="sublist">
+  <li>integers as signed modular arithmetic,</li>
+  <li>integers as fixed-length bit vectors,</li>
+  <li>characters and strings,</li>
+  <li>Boolean operations with short-circuiting evaluation,</li>
+  <li>arrays,</li>
+  <li>loops (<tt>while</tt> and <tt>for</tt>),</li>
+  <li>pointers,</li>
+  <li>structs,</li>
+  <li>recursive and mutually recursive functions,</li>
+  <li><tt>void</tt> pointers and casts between pointer types,</li>
+  <li>contracts (in C0), and</li>
+  <li>casts between different numeric types (in C).</li>
+</ol></li>
+<li>translate between high-level algorithms and correct imperative code.</li>
+<li>translate between high-level loop invariants and data structure invariants and correct contracts.</li>
+<li>write code using external libraries when given a library interface.</li>
+<li>develop, test, rewrite, and refine code that meets a given specification or interface.</li>
+<li>develop and refine small interfaces.</li>
+<li>document code with comments and contracts.</li>
+<li>identify undefined and implementation-defined behaviors in C.</li>
+<li>write, compile, and test C programs in a Unix-based environment
+using <tt>make</tt>, <tt>gcc</tt>, and <tt>valgrind</tt>.</li>
+</ol>
+
+
+<h3>Algorithms and Data Structures</h3>
+
+Students who complete this course should be able to describe the implementation of a number of basic algorithms and data structures, effectively employ those algorithms and data structures, and explain and interpret worst-case asymptotic complexity arguments. In particular, we expect students to be able to:
+<ol class="continue">
+<li>determine the big-O complexity of common code patterns.</li>
+<li>compare common complexity classes like <em>O(1)</em>, <em>O(n)</em>, <em>O(n log(n))</em>, <em>O(n<span class="sup">2</span>)</em>, and <em>O(2<span class="sup">n</span>)</em>.</li>
+<li>explain the structure of basic amortized analysis proofs that use potential functions.</li>
+<li>apply principles of asymptotic analysis and amortized analysis to new algorithms and data structures.</li>
+<li>recognize properties of simple self-adjusting data structures.</li>
+<li>recognize algorithms and data structures using divide-and-conquer.</li>
+<li>describe and employ a number of basic algorithms and data structures:
+  <ol class="sublist">
+  <li>integer algorithms,</li>
+  <li>linear search,</li>
+  <li>binary search,</li>
+  <li>sub-quadratic complexity sorting (mergesort and quicksort),</li>
+  <li>stacks and queues,</li>
+  <li>pseudo-random number generators,</li>
+  <li>hash tables,</li>
+  <li>priority queues,</li>
+  <li>balanced binary search trees,</li>
+  <li>disjoint-set data structures (union/find), and</li>
+  <li>simple graph algorithms.</li>
+</ol></li>
+</ol>
+
+</div>
+</div>

@@ -1,0 +1,17 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lecture 8</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374d300a0001dc0bb767f6740b04ff">Pointers</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374d450a0001dc6efe7df0ffafabb8">Structs</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374d550a0001dc10b34eb0b9edd64b">Libraries</a></li>
+</ol>
+
+
+<!--#include virtual="inc/bottom.shtml"-->

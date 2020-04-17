@@ -1,0 +1,49 @@
+<div class="lecture-title">
+  Contracts
+</div>
+
+<div class="lecture-summary">
+  Contracts are program annotations that spell out what the code is
+  supposed to do.  They are the key to connecting algorithmic ideas to
+  their implementation as a program.  In this lecture, we illustrate
+  the use of contracts by means of a simple C0 program.  As we do so,
+  we learn to verify loop invariants &mdash; an important type of
+  contract, we see how contracts can help us write correct code, and
+  we get acquainted with C0's automated support to validating contracts.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption">Concepts:</span>
+    <ul class="lecture-material-list">
+    <li>Loop invariants</li>
+    <li>Assertions</li>
+    <li>Using contracts to write correct programs</li>
+    <li>Contract support in C0</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes
+        (<a rel="tipsy" title="Material with interactive exercises"
+            href="oli-01.shtml">oli</a>,
+         <a rel="tipsy" title="Material in PDF format"
+            href="handouts/01-contracts.pdf">pdf</a>)</li>
+    <li><a href="slides/review/01-contracts.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86226c23-db10-4fd9-b59c-d09a8f223c0a">Lecture video</a></li>
+      <li><a class="code" href="code/01-contracts.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture 2 slides: concept highlights only"
+             href="slides/inclass/dilsun-01-contracts.pdf">In-class slides</a></li>
+    </ul>
+    </ul>
+  </div>
+
+</div>
+</div>

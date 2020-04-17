@@ -1,0 +1,43 @@
+<div class="lecture-title">
+  Binary Search Trees
+</div>
+
+<div class="lecture-summary">
+  We discuss trees as an approach to representing a collection, and
+  binary search trees as an effective data structure to store and
+  operate on sorted data.  In particular, most operations on balanced
+  binary search trees have a logarithm cost on the number of contained
+  data.  Binary search trees can however become unbalanced over time.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <Span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Trees</li>
+    <li>Binary search trees</li>
+    <li>Ordering invariant</li>
+    <li>Exponential speedup</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/15-bst.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/15-bst.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=663b365e-4aa3-430e-b902-41e7e28d7b2d">Lecture video</a></li>
+      <li><a class="code" href="code/15-bst.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-15-bst.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+  </div>
+</div>

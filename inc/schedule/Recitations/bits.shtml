@@ -1,0 +1,16 @@
+<div class="lecture-title">
+  A Bit about Bytes
+</div>
+
+<div class="lecture-summary">
+  This recitation practices base conversion and writing code
+  that manipulates bits.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <ul class="lecture-material-list">
+    <li><a class="qatool">Exercises</a></li>
+    </ul>
+  </div>
+</div>

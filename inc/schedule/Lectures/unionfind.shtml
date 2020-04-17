@@ -1,0 +1,51 @@
+<div class="lecture-title">
+  Union-Find
+</div>
+
+<div class="lecture-summary">
+  A collection of nodes having a given property in a graph &mdash;
+  e.g., being a minimum spanning tree &mdash; can be represented in
+  many ways, for example as any permutation of the list consisting of
+  these nodes.  All these ways are equivalent, and indeed they form an
+  equivalence class.  At each step of Kruskal's algorithm, some of
+  these equivalence classes need to be combined into bigger equivalence
+  classes, while ensuring that the underlying property is still
+  maintained &mdash; that of the result being a spanning tree.  The
+  union-find data structure maintains a canonical representative of
+  this class.  The union-find algorithm efficiently determines a
+  canonical representative when merging two equivalence classes.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Equivalence classes</li>
+    <li>Canonical representative</li>
+    <li>The union-find data structure</li>
+    <li>The union-find algorithm</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/26-unionfind.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/26-unionfind.pdf"><b>DRAFT</b> Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44e1437f-0ad0-47dc-aae2-0e5bc35bc222">Lecture video</a></li>
+      <li><a class="code" href="code/26-unionfind.tgz">Code</a></li>
+      <!--li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-26-unionfind.pdf">In-class slides</a></li-->
+    <li><a href="http://www.cs.usfca.edu/~galles/visualization/Kruskal.html">Animation</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="lecture-title">
+  Setup
+</div>
+
+<!-- change the displayed date for this lab only -->
+<!--script type="text/javascript">
+$(document).ready(function() {
+  $('#lab1').parent().find(".schedule-date").html("Sat 20 Jan");
+});
+</script-->
+
+
+<div class="lecture-summary">
+  This lab practices using Linux and running the C0 interpreter and compiler.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <ul class="lecture-material-list">
+    <li><a href="misc/lab01-writeup.pdf">lab 1 exercises</a> and
+        <a href="misc/lab01-handout.tgz">starter code</a><br>
+        or download from <a class="qatoolname qatool"></a></li>
+    <!--li><a href="misc/linux_quickref.pdf">Unix quick reference</a></li-->
+    <!--li><a href="misc/emacs_quickref.pdf">Emacs quick reference</a></li-->
+    </ul>
+  </div>
+</div>

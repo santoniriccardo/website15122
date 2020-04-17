@@ -1,0 +1,51 @@
+<div class="lecture-title">
+  Generic Data Structures
+</div>
+
+<div class="lecture-summary">
+  In large (and not-so-large) systems, it is common to make multiple
+  uses of the same library, each instantiated with different
+  parameters.  This is not possible in C0, however.  To achieve this
+  goal, we look at a richer language, called C1.  C1 provides two new
+  features: generic pointers and function pointers.  Generic
+  pointers, <tt>void *</tt> in C, allow a same library type to be
+  instantiated with different client types at once, which gives us a
+  way to use a hash table library with both integers and strings as
+  keys for example.  Function pointers allow a library to be
+  instantiated with different client-supplied operations in the same
+  program.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Genericity &mdash; part II: function pointers</li>
+    <!--li>Generic pointers: <tt>void *</tt></li-->
+    <!--li>Function pointers</li-->
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/14-generic.pdf">Lecture notes</a></li>
+    <li>Review slides
+      <ul style="margin-top: 0pt">
+      <li><a href="slides/review/14-fpointer.pdf">function pointers</a></li>
+      <li><a href="slides/review/14-generic.pdf">generic hash dictionaries</a></li>
+      </ul></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb3564d9-df98-40f5-ba30-6d639544f965">Lecture video</a></li>
+      <li><a class="code" href="code/14-generic.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-14-generic.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

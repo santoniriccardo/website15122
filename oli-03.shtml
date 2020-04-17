@@ -1,0 +1,16 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lecture 3</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c1b0a0001dc768ef3535db2363e">C0 Memory Model for Simple Types</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c280a0001dc342d36f68ae15d26">Arrays</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c3c0a0001dc728d60dd9b2bfb5b">Writing Safe and Correct Array Code</a></li>
+</ol>
+
+<!--#include virtual="inc/bottom.shtml"-->

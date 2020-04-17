@@ -1,0 +1,44 @@
+<div class="lecture-title">
+  Restoring Invariants
+</div>
+
+<div class="lecture-summary">
+  In this lecture, we write a library that implements min-heaps using
+  arrays.  Of particular interest is how the temporary violation of
+  invariants needed to implement min-heap operations manifests at the
+  level of contracts.  Careful pre- and post-conditions are key to
+  writing their code correctly.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Temporary violation of invariants</li>
+    <li>Controlling invariant violations using contracts</li>
+    <li>Min-heap library implementation</li>
+    <li>Heapsort</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/18-resinvs.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/18-resinvs.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=657d6a19-098d-4c5a-8678-985ec620b9c0">Lecture video</a></li>
+      <li><a class="code" href="code/18-resinvs.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-18-resinvs.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

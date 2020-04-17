@@ -1,0 +1,59 @@
+<script type="text/javascript">
+  /* UPDATE FOR EACH QUIZ */
+  var qnum   = 6;                        /* Quiz number */
+  var qday   = 14;                        /* Quiz date   */
+  var qmonth = 4;
+  var qyear  = 2020;
+
+/* Course evaluations */
+var evals = null;
+//var evals = 'https://www.diderot.one/course/17/dosts/?is_inbox=yes&dost=11431';
+</script>
+
+<script type="text/javascript" src="inc/scripts/quiz.js"></script>
+<link rel="stylesheet" type="text/css" href="inc/css/quiz.css" />
+
+
+<script>
+  if (evals != null) window.location.replace(evals);
+  if (quiz  != null) window.location.replace(quiz);
+</script>
+
+<h1 style="text-align: center;">No 15-122 quiz is running at this time</h1>
+
+<h2>Testing your configuration</h2>
+
+Use this button to test your configuration:
+&nbsp;&nbsp;
+<form class="inline"
+      action="javascript:window.location.replace(qtest);">
+  <input type="submit" value="Test">
+</form>
+
+
+<h2>Common misconfigurations</h2>
+<ul>
+  <li>You are not signed in to a CMU network
+    <p class="fix">
+      go to the <a href="https://login.cmu.edu/">Web Login page</a>
+    </p>
+  </li>
+  <li>The date or time on your computer is invalid
+    <p class="fix" style="margin-bottom: 0.25ex;">
+      go to your time and date settings,
+      <ul>
+        <li>set the time and date to be set <em>automatically</em></li>
+        <li>set the timezone to <em>US Eastern</em> (or <em>New York</em>)</li>
+      </ul>
+    </p>
+  </li>
+</ul>
+
+
+<h2>Problem fixed?</h2>
+
+Give it another try
+&nbsp;&nbsp;
+<form class="inline" action="">
+  <input type="submit" value="Go to today's quiz">
+</form>

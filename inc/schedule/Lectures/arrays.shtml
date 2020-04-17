@@ -1,0 +1,51 @@
+<div class="lecture-title">
+  Arrays
+</div>
+
+<div class="lecture-summary">
+  In this lecture, we examine arrays as our first composite data
+  structure, i.e., a data construction designed to hold multiple
+  values, together with operations to access them.  Accessing an array
+  element outside of its range is undefined &mdash; it is a safety
+  violation &mdash; and we see how to use contracts, in particular
+  loop invariants, to ensure the safety of array accesses in a
+  program.  Arrays are stored in memory, which means that they are
+  manipulated through an address.  This raises the possibility of
+  aliasing, a notorious source of bugs in carelessly written programs.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Arrays</li>
+    <li>Memory allocation</li>
+    <li>Safe access</li>
+    <li>Loop invariants for arrays</li>
+    <li>Aliasing</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes
+        (<a rel="tipsy" title="Material with interactive exercies"
+            href="oli-03.shtml">oli</a>,
+         <a rel="tipsy" title="Material in PDF format"
+            href="handouts/03-arrays.pdf">pdf</a>)</li>
+      <li><a href="slides/review/03-arrays.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c943b6e6-ec00-46e5-abf4-a4d5d236895b">Lecture video</a></li>
+      <li><a class="code" href="code/03-arrays.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-03-arrays.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

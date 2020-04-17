@@ -1,0 +1,17 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lecture 5</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c5f0a0001dc79804d383067f526">What Does Code Cost?</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c6a0a0001dc278a886b02eeab3b">Complexity Classes</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c7c0a0001dc74ee830934075ed2">Assessing Complexity</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374cea0a0001dc2c0116d5fd8f6bdd">Sorting Arrays</a></li>
+</ol>
+
+<!--#include virtual="inc/bottom.shtml"-->

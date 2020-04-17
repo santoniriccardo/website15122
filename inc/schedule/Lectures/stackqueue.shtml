@@ -1,0 +1,43 @@
+<div class="lecture-title">
+  Stacks and Queues
+</div>
+
+<div class="lecture-summary">
+  In this lecture, we examine the interface of two fundamental data
+  structures, stacks and queues.  We practice using the exported
+  functions to write client code that implements operations of stacks
+  and queues that are not provided by the interface.  By relying only
+  of the interface functions and their contracts, we can write code
+  that is correct for any implementation of stacks and queues.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Interface of stacks and queues</li>
+    <li>Using an interface</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/09-stackqueue.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/09-stackqueue.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9ad9b6b-4489-4a7d-95f5-4ebae2147b9a">Lecture video</a></li>
+      <li><a class="code" href="code/09-stackqueue.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-09-stackqueue.pdf">In-class slides</a></li>
+      <br><br>
+      <li><a href="http://facstaff.elon.edu/sduvall2/CSFairyTales/cartoon.html">How queues can turn your life around</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

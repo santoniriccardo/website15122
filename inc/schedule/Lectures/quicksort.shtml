@@ -1,0 +1,52 @@
+<div class="lecture-title">
+  Quicksort
+</div>
+
+<div class="lecture-summary">
+  We use the key idea underlying binary search to implement two sorting
+  algorithms with better complexity than selection sort.  We examine
+  one of them, quicksort, in detail, again using contracts to achieve
+  a correct implementation, this time a recursive implementation.  We
+  observe that the asymptotic complexity of quicksort depends on the
+  the value of a quantity the algorithm use (the pivot) and discuss
+  ways to reduce the chances of making a bad choice for it.  We
+  conclude by examining another sorting algorithm, mergesort, which is
+  immune from this issue.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Quicksort</li>
+    <li>Deliberate programming</li>
+    <li>Recursion</li>
+    <li>Best, average, and worst case complexity</li>
+    <li>Randomness</li>
+    <li>Choosing an algorithm for a problem</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+      <li><a href="handouts/07-quicksort.pdf">Lecture notes</a></li>
+      <li><a href="slides/review/07-quicksort.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ae0fe148-d246-46c7-89e4-dc6b09b47330">Lecture video</a></li>
+      <li><a class="code" href="code/07-quicksort.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-07-quicksort.pdf">In-class slides</a></li>
+      <br><br>
+      <li><a href="http://www.youtube.com/watch?v=XaqR3G_NVoo">Mergesort folk dance</a></li>
+      <br>
+      <li><a href="http://www.youtube.com/watch?v=ywWBy6J5gz8">Quicksort folk dance</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

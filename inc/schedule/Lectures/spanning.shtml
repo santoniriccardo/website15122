@@ -1,0 +1,45 @@
+<div class="lecture-title">
+  Spanning Trees
+</div>
+
+<div class="lecture-summary">
+  Given a starting node in a graph, it is often useful to superimpose
+  onto the graph a way to visit every each of the remaining node
+  uniquely by following edges.  This is a spanning tree for that
+  graph.  Things get particularly interesting for graphs whose edges
+  carry a weight (e.g., the distance between cities in the graph
+  representing a road map).  Then, spanning trees with the smallest
+  cumulative weight are really interesting &mdash; they are called
+  minimum spanning trees.  We discuss Kruskal's algorithm, a classical
+  method for computing a minimum spanning tree.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Spanning trees</li>
+    <li>Minimum spanning trees</li>
+    <li>Kruskal's algorithm</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/25-spanning.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/25-spanning.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f06d56d3-76d7-4f4f-b4d0-d117a3088780">Lecture video</a></li>
+      <!--li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-25-spanning.pdf">In-class slides</a></li-->
+    </ul>
+    </div>
+  </div>
+</div>

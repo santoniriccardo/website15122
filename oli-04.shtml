@@ -1,0 +1,16 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lecture 4</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374c9d0a0001dc5c736b87a4503411">Linear Search</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374cbe0a0001dc0c212a957692045c">Describing Arrays</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374cd20a0001dc144bdbb026fd685a">Manipulating Arrays</a></li>
+</ol>
+
+<!--#include virtual="inc/bottom.shtml"-->

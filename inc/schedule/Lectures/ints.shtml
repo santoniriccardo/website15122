@@ -1,0 +1,48 @@
+<div class="lecture-title">
+  Ints
+</div>
+
+<div class="lecture-summary">
+  In this lecture, we explore how number representation interplays
+  with the the ability to write effective contracts.  We focus on
+  integers and see how the binary representation called two's
+  complement supports the laws of modular arithmetic, which C0
+  embraces.  We also examine operations that allow exploiting the bit
+  pattern of a binary number to achieve compact representations of
+  other entities of interest, and to manipulate them.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Representation of integers</li>
+    <li>Two's complement</li>
+    <li>Modular arithmetic</li>
+    <li>Bit-level operations</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes
+        (<a rel="tipsy" title="Material with interactive exercises"
+            href="oli-02.shtml">oli</a>,
+         <a rel="tipsy" title="Material in PDF format"
+            href="handouts/02-ints.pdf">pdf</a>)</li>
+    <li><a href="slides/review/02-ints.pdf"><b>DRAFT</b> Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e6ec3bf-2329-4b38-8049-e3c51461a0dc">Lecture video</a></li>
+      <li><a class="code" href="code/02-ints.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-02-ints.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

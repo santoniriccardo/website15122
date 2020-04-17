@@ -1,0 +1,45 @@
+<div class="lecture-title">
+   AVL trees
+</div>
+
+<div class="lecture-summary">
+  Self-balancing trees guarantee the performance advantages of binary
+  search trees by making sure that common operations keep the tree
+  roughly balanced.  This assurance comes at the price of more complex
+  code for these operations, which rely on more complex invariants to
+  tame it.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>AVL trees</li>
+    <li>AVL invariants</li>
+    <li>Rotations</li>
+    <li>Experimental validation</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/16-avl.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/16-avl.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6cfe8e12-e3eb-424a-93ef-340e81f5088e">Lecture video</a></li>
+      <li><a class="code" href="code/16-avl.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-16-avl.pdf">In-class slides</a></li>
+    <li><a href="http://www.cs.usfca.edu/~galles/visualization/AVLtree.html">Animation</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,21 @@
+div.filterbox {
+ font-size: medium;
+ font-weight: normal;
+ position: absolute;
+ right: 2px;
+ top: 92px;
+}
+
+form.filterbox {
+ background-color: white;
+}
+
+input.filter {
+ width: 170px;
+}
+
+@media print { 
+  .filterbox, .filter {
+    display: none;
+  }
+}

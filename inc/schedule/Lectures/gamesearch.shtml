@@ -1,0 +1,45 @@
+<div class="lecture-title">
+  Reachability in Graphs
+</div>
+
+<div class="lecture-summary">
+  When working with graphs, one basic question is whether a node is
+  reachable from another node by following a path.  That destination
+  node is often described by a property of interest &mdash; e.g.,
+  being a winning board in the graph representing the moves of a
+  game.  We examine various approaches to solving the reachability
+  programs, in particular depth-first and breadth-first, each of which
+  has its own advantages.  We then discuss various approaches to
+  implementing these strategies.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Path between nodes</li>
+    <li>Depth-first search</li>
+    <li>Breadth-first search</li>
+    <li>Implementation strategies</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/24-graphsearch.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/24-graphsearch.pdf"><b>DRAFT</b> Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7247f0b7-321a-4327-af13-6fe349933f32">Lecture video</a></li>
+      <li><a class="code" href="code/24-graphsearch.tgz">Code</a></li>
+      <!--li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-24-graphsearch.pdf">In-class slides</a></li-->
+    </ul>
+    </div>
+</div>

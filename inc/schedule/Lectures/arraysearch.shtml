@@ -1,0 +1,51 @@
+<div class="lecture-title">
+  Searching Arrays
+</div>
+
+<div class="lecture-summary">
+  We practice reasoning about arrays by implementing a function that
+  searches whether an array contains a given value &mdash; this is the
+  gateway to a whole class of useful operations.  We notice that this
+  function returns its result more quickly when the array is sorted.
+  We write a specialized variant that assumes that the array is
+  sorted, and show that it works correctly by reasoning about array
+  bounds.  The first (simpler but less efficient) version acts as a
+  specification for the the second (slightly more complex but often
+  faster).  Using the specification in the contract for the
+  implementation is a standard technique to help writing correct code.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Linear search</li>
+    <li>Reasoning about arrays</li>
+    <li>Sorted arrays</li>
+    <li>Performance as number of operations executed</li>
+    <li>Specification vs. implementation</li>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes
+        (<a rel="tipsy" title="Material with interactive exercises"
+            href="oli-04.shtml">oli</a>,
+                       <a rel="tipsy" title="Material in PDF format"
+            href="handouts/04-linsearch.pdf">pdf</a>)</li>
+    <li><a href="slides/review/04-linsearch.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b4c61e14-4968-4525-913f-103d4b2d1593">Lecture video</a></li>
+      <li><a class="code" href="code/04-linsearch.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-04-linsearch.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="lecture-title">
+      Welcome and Course Introduction
+</div>
+
+<div class="lecture-summary">
+  We outline the course, its goals, and talk about various administrative
+  issues.
+</div>
+
+
+<div class="lecture-readings">
+  <div class="readings-further">
+    <span  class="lecture-material-caption">Readings:</span>
+    <ul class="lecture-material-list">
+      <li><a href="syllabus.shtml">Course syllabus</a></li>
+      <li><a href="slides/00-overview.pdf">Overview slides</a></li>
+    </ul>
+  </div>
+</div>

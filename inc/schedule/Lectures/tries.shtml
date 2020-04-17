@@ -1,0 +1,38 @@
+<div class="lecture-title">
+  Tries
+</div>
+
+<div class="lecture-summary">
+  All non-elementary data structure examined so far relied on some
+  operations of the data they organized (e.g., a comparison function
+  for binary search trees).  Tries rely also on the structure of the
+  data itself.  Data in tries are typically strings and the structure
+  they leverage is the fact that they consist of a sequence of
+  characters.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Multi-way tries</li>
+    <li>Binary tries</li>
+    <li>Implementation strategies</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/22-tries.pdf">Lecture notes</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <!--li><a class="video" href="">Lecture video</a></li-->
+      <li><a class="code" href="code/tba.c0">Code</a></li>
+    </ul>
+    </div>
+
+</div>

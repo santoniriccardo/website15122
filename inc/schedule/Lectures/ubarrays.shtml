@@ -1,0 +1,52 @@
+<div class="lecture-title">
+  Unbounded Arrays
+</div>
+
+<div class="lecture-summary">
+  When implementing a data structure for a homogeneous collection,
+  using an array has the advantage that each element can be accessed
+  in constant time, but the drawback that we must fix the number of
+  elements a priori.  Linked lists can have arbitrarily length but
+  access takes linear time.  Can we have the best of both worlds?
+  Unbounded arrays rely on an array to store the data, but double it
+  when we run out of place for new elements.  The effect is that
+  adding an element can be either very cheap or very expensive
+  depending on how full the array is.  However, a series of insertions
+  will appear as if each one of them takes constant time in average.
+  Showing that this is the case requires a technique called amortized
+  analysis, which we explore at length in this lecture.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Better trade-offs</li>
+    <li>Amortized analysis</li>
+    <li>Unbounded arrays</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/11-ubarrays.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/11-ubarray.pdf">Review slides</a></li>
+    <li><a href="https://www.youtube.com/watch?v=2kUTu0sI_Rs">The <em>k</em>-bit
+    counter</a> (10 minute video)</li>
+    <li><a href="http://www.youtube.com/watch?v=U5XKyIVy2Vc">Amortized
+        analysis</a> (15 minute video)</li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=abcac66f-4a28-4f7c-80f3-67bf9fca6757">Lecture video</a></li>
+      <li><a class="code" href="code/11-ubarrays.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-11-ubarrays.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

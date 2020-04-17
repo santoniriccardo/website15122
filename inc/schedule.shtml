@@ -1,0 +1,89 @@
+<!-- Inherits from calendar.css -->
+
+<!-- Adds the filter box to the schedule page -->
+<script type="text/javascript" src="inc/lib/jquery.liveFilter.min.js"></script>
+<link type="text/css" rel="stylesheet" href="inc/css/filter.css"
+      charset="utf-8" />
+
+<style>
+  .remoteLinks {
+  font-size: 120%;
+  background-color: white;
+  width: 15em;
+  text-align: center;
+  margin-left: 2em;
+  padding: 0.5ex 1em;
+  border: 2px solid red;
+}
+</style>
+
+<!-- Actions that should be taken only on the schedule page -->
+<script type="text/javascript">
+$(document).ready(function() {
+   $('#schedule').html(buildSchedule());
+   callPendingSnippets(afterLoadingSnippets);
+});
+</script>
+
+
+<h1 id="SCHEDULE">Schedule of Classes</h1>
+
+<h3 class="toggle-base"><span class="toggle-label">At a glance ...</span></h3>
+<div class="toggle-me" style="margin-left:20px; margin-right:auto; width:100%;">
+  <div id="classCalendar" style="page-break-inside:avoid;"></div>
+</div>
+</div><!-- toggler-on -->
+
+
+<div class="toggler-off">
+<h3 class="toggle-base"><span class="toggle-label">Outline</span></h3>
+
+<div class="toggle-me">
+The course is organized around the following themes:
+<table style="margin-top: 1ex;" width="100%" border=1>
+<thead bgcolor=lightgray>
+<th colspan=5 width="36%">Weeks 1-4</th>
+<th colspan=3 width="22%">Weeks 5-10</th>
+<th colspan=6 width="42%">Weeks 11-15</th>
+</thead>
+<tr align=center valign=top>
+<td colspan=5 bgcolor="#FFCC44" style="padding:10px 0"><a href="#lecture1">Deliberate programming</a></td>
+<td colspan=3 bgcolor="#FFCC99" style="padding:10px 0"><a href="#lecture9">Data structures</a></td>
+<td colspan=6 bgcolor="#FFCCEE" style="padding:10px 0"><a href="#lecture20">Transition to C</a></td>
+</thead>
+</tr>
+</table>
+<p></p>
+
+In this course, there will be three types of class periods:
+<ul>
+<li class="lecture" style="text-align:justify">
+	<b><em>Lectures</em></b> are listed below with a blue
+	background.  Lectures are led by the instructors and present
+	the core material of the course.
+</li>
+<li class="lab" style="text-align:justify; margin-top:4pt">
+	<b><em>Lab sessions</em></b> are listed with a light gray
+	background.  Labs take place in small groups in various
+	computer clusters under the supervision of teaching
+	assistants.  Their main purpose is to reinforce
+	the <em>programming</em> notions introduced in lecture.  They
+	consist of a small number of practice exercises to be solved
+	on a computer.  Labs are graded on a 0-3 scale, with 3
+	indicating completion of all exercises.
+</li>
+<li class="recitation" style="text-align:justify; margin-top:4pt">
+	<b><em>Recitations</em></b> are listed with a dark gray
+	background.  Recitations take place in small groups in various
+	classrooms under the supervision of teaching assistants.
+	Their main purpose is to reinforce the <em>theoretical</em>
+	notions introduced in lecture.  They consist of a small number
+	of practice exercises to be solved on paper.  Recitations are
+	graded on a 0-3 scale, with 3 indicating completion of all
+	exercises.
+</li>
+</ul>
+</div>
+
+<br>
+<div id="schedule"></div>

@@ -1,0 +1,47 @@
+<div class="lecture-title">
+  Data Structures in C
+</div>
+
+<div class="lecture-summary">
+  With this lecture, we are moving from the safety of C0 to the more
+  open-ended world of C.  We introduce some basic concepts of C, in
+  particular the C preprocessor and how macros written in this
+  language can simulate some of the effects of C0's contracts.  We
+  also see how to compile C programs and discuss separate compilation.
+  We conclude with C's primitives to manage memory, in particular the
+  need to free allocated memory to prevent memory leaks.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>The C preprocessor</li>
+    <li>Macros</li>
+    <li>Contracts in C</li>
+    <li>Compilation of C programs</li>
+    <li>Allocation and deallocation</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/19-cstructure.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/19-cstructure.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9403f14-b17c-43c4-9540-35c6bd560b3d">Lecture video</a></li>
+      <li><a class="code" href="code/19-cstructure.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-19-cstructure.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

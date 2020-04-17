@@ -1,0 +1,3 @@
+<!--#include virtual="inc/top.shtml"-->
+<!--#include virtual="inc/quiz.shtml"-->
+<!--#include virtual="inc/bottom.shtml"-->

@@ -1,0 +1,19 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lecture 6</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374d130a0001dc68aa8dc226c71220">Binary Search</a></li>
+</ol>
+
+<p>
+  Please refer to the lecture notes for other topics covered in this
+  lecture.
+</p>
+
+<!--#include virtual="inc/bottom.shtml"-->

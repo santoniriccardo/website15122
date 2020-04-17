@@ -1,0 +1,15 @@
+<div class="lecture-title">
+  A <tt>queue_t</tt> Interface
+</div>
+
+<div class="lecture-summary">
+  This recitation practices programming against an interface.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <ul class="lecture-material-list">
+    <li><a class="qatool">Exercises</a></li>
+    </ul>
+  </div>
+</div>

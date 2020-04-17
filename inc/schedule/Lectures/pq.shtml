@@ -1,0 +1,47 @@
+<div class="lecture-title">
+  Priority Queues
+</div>
+
+<div class="lecture-summary">
+  We discuss priority queues, another classical data structure.  Among
+  the possible ways to implement priority queues, we consider
+  min-heaps, a tree-based strategy that provides superior
+  performance.  We examine the data structure invariants of min-heaps
+  and observe that we need to violate them during operations such as
+  insertion.  To conclude with, we see that min-heaps are amenable to
+  an efficient implementation based on arrays.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Priority queues</li>
+    <li>Implementation strategies</li>
+    <li>Heap-based implementation</li>
+    <li>Implementing heaps using arrays</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/17-pq.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/17-pq.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e612b1bc-a3f1-4fda-8a41-52e6329063bb">Lecture video</a></li>
+      <li><a class="code" href="code/18-resinvs.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-17-pq.pdf">In-class slides</a></li>
+    <li><a href="http://www.cs.usfca.edu/~galles/visualization/Heap.html">Animation</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

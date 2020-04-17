@@ -1,0 +1,67 @@
+<div class="lecture-title">
+  Data structures
+</div>
+
+<div class="lecture-summary">
+  Arrays are homogeneous collections, where all components have the
+  same type.  <tt>struct</tt>s enable building heterogeneous
+  collections, that allow combining components of different types.
+  They are key to building pervasively used data structures.  In C0,
+  a <tt>struct</tt> resides in allocated memory and is accessed
+  through an address, which brings up a new form of safety violation:
+  the <tt>NULL</tt> pointer violation.  We extend the language of
+  contracts to reason about pointers.
+  <br>
+  Now that we have a two ways to build complex collections, we start
+  exploring the idea of segregating the definition of a data structure
+  and the operations that manipulate it into a library.  Code that
+  uses this data structure only needs to be aware of the type,
+  operations and invariants of the data structure, not the way they
+  are implemented.  This is the basis of a form of modular programming
+  called abstract data types, in which client code uses a data
+  structure exclusively through an interface without being aware of
+  the underlying implementation.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Pointers</li>
+    <li>Structs</li>
+    <li>Abstract data types</li>
+    <li>Interfaces, client code and library code</li>
+    <li>Data structure invariants</li>
+    <li>Testing</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes
+        (<a rel="tipsy" title="Material with interactive exercises"
+            href="oli-08.shtml">oli</a>,
+         <a rel="tipsy" title="Material in PDF format"
+            href="handouts/08-datastruct.pdf">pdf</a>)</li>
+      <li><a href="slides/review/08-pointers.pdf">Review slides</a>
+      (pointers and structs)</li>
+      <li><a href="slides/review/08-library.pdf">Review slides</a>
+      (libraries)</li>
+     </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=38c8cb95-e513-4ecc-8e2a-250203b12df8">Lecture video</a></li>
+      <li><a class="code" href="code/08-datastruct.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-08-datastruct.pdf">In-class slides</a></li>
+      <br><br>
+      <li><a href="http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare">Tony Hoare about the <tt>NULL</tt> pointer</a> (at 27:30)
+
+    </ul>
+    </div>
+
+  </div>
+</div>

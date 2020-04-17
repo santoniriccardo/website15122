@@ -1,0 +1,59 @@
+<div class="lecture-title">
+  Hash Tables
+</div>
+
+<div class="lecture-summary">
+  Associative arrays are data structures that allow efficiently
+  retrieving a value on the basis of a key: arrays are the special
+  case where valid indices into the array are the only possible keys.
+  One popular way to implement associative arrays is to use hash
+  tables, which computes an array index out of each key and uses that
+  index to find the associated value.  However, multiple keys can map
+  to the same index, something called a collision.  We discuss several
+  approaches to dealing with collisions, focusing on one called separate
+  chaining.  The cost of access depends on the contents of the hash
+  table.  While a worst case analysis is useful, it is not typically
+  representative of normal usage.  We compute the average case
+  complexity of an access relative to as few simple parameters of the
+  hash table.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Genericity &mdash; part I: void pointers</li>
+    <li>Associative arrays AKA dictionaries AKA maps</li>
+    <li>Implementation using hash tables</li>
+    <li>Dealing with collisions</li>
+    <li>Randomness</li>
+    <li>Average case complexity</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes (generic pointers)
+        <ul style="margin-top:0pt; margin-bottom:0pt;">
+        <li style="margin-bottom:0pt;"><a href="handouts/13-hdict.pdf"><tt>elem</tt></a> (sec. 1)</li>
+        <li style="margin-bottom:0pt;"><a href="handouts/14-generic.pdf"><tt>void*</tt></a>
+          (sec. 4)</li>
+        </ul></li>
+    <li><a href="slides/review/12-voidstar.pdf">Review slides</a> (generic pointers)</li>
+    <li><a href="handouts/12-hashing.pdf">Lecture notes</a> (hashing)</li>
+    <li><a href="slides/review/12-hashing.pdf">Review slides</a> (hashing)</li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd5138d1-f842-4fe3-b256-257f6e4565d4">Lecture video</a></li>
+      <li><a class="code" href="code/12-hashing.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-12-hashing.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

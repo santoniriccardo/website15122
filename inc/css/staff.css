@@ -1,0 +1,70 @@
+.staffname {
+  font-size: larger;
+  font-weight: bold;
+}
+
+div.staffpic {
+  XXfloat: left;
+  Xmargin: 5px;
+  width: 400px;
+}
+
+img.staffpic {
+  width: 140px;
+  height: 140px;
+  XXheight: 200px;
+  float: left;
+  border: 1px solid #c0c0c0;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+span.office:before {
+  content: "Office: ";
+  font-weight: bold;
+  font-style: normal;
+}
+span.office {
+  font-style: italic;
+}
+.ohcomment:before {
+  content: "\21E8  ";
+}
+.ohcomment {
+  padding-left:0.8em;
+  font-size: smaller;
+}
+table.officehours {
+  display: inline-table;
+  vertical-align: top;
+}
+span.officehours {
+  padding-left: 1em;
+}
+
+span.officehoursname {
+  font-weight: bold;
+}
+.ohschedule td, .ohschedule th {
+  padding: 0.5ex 0.2em;
+  white-space: nowrap;
+  width: 100px;
+  vertical-align: top;
+}
+span.holength {
+  display: block;
+  font-size: smaller;
+  Xmargin-left: 0.25em;
+  Xmargin-bottom: 0.5ex;
+  font-style: italic;
+}
+span.holength:before {
+  content: " (";
+}
+span.holength:after {
+  content: " minutes)";
+}
+span.honame {
+  padding-left: 0.3em;
+  font-size: 90%;
+}

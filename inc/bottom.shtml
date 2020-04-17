@@ -1,0 +1,15 @@
+<hr>
+<address>
+<table width=100% cellspacing=0 cellpadding=0><tr>
+<td align=left>
+  <span id="copyright">2020
+  <a href="http://cs.cmu.edu/iliano">Iliano Cervesato</a></span>
+</td><td align=right>
+  <span id="authorEmail"></span>
+</td></tr></table>
+</address>
+
+<div style="display:none">
+<div id="invisible"></div>
+</div>
+</body></html>

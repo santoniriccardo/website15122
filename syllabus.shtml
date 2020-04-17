@@ -1,0 +1,7 @@
+<!--#include virtual="inc/top.shtml"-->
+<!--#include virtual="inc/home.shtml"-->
+<!--#include virtual="inc/about.shtml"-->
+<!--#include virtual="inc/staff.shtml"-->
+<!--#include virtual="inc/schedule.shtml"-->
+<!--#include virtual="inc/bottom.shtml"-->
+

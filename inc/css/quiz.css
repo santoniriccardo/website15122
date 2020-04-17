@@ -1,0 +1,13 @@
+form.inline {
+  display: inline;
+  vertical-align: middle;
+}
+
+p.fix:before {
+  content: "Fix: ";
+  font-weight: bold;
+}
+p.fix {
+  margin-top: 0.75ex;
+  margin-bottom: 2ex;
+}

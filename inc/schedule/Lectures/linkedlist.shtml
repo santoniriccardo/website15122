@@ -1,0 +1,48 @@
+<div id="lecture-title" class="lecture-title">
+  Linked Lists
+</div>
+
+<div class="lecture-summary">
+  We observe that we can implement array-like collections using
+  a <tt>struct</tt> that packages each element with a pointer to the
+  next element.  This idea underlies linked lists, a data structure
+  pervasively used in computer science.  Writing correct code about
+  linked lists is however tricky as we often rely on stricter
+  invariants than natively supported, in particular the absence of
+  cycles.  We develop code to be used in contracts to check for common
+  such properties.  We then use linked lists to write code that
+  implements the stack interface, and similarly for queues.  We could
+  have given an array-based implementation, and we note the advantages
+  and drawbacks of each choice.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Linked lists</li>
+    <li>Checking data structure invariants</li>
+    <li>Linked list implementation of stacks and queues</li>
+    <li>Choosing an implementation: trade-offs</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/10-linkedlist.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/10-linkedlist.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57956ad8-877e-42db-867c-69ce26c855fe">Lecture video</a></li>
+      <li><a class="code" href="code/10-linkedlist.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-10-linkedlist.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

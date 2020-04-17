@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+ CS 15-122: Principles of Imperative Computation (Spring 2020)
+</title>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script type="text/javascript" src="inc/lib/jquery.min.js"></script>
+<script type="text/javascript" src="inc/lib/tipsy/js/jquery.tipsy.js"></script>
+<link rel="stylesheet" type="text/css" href="inc/lib/tipsy/css/tipsy.css" />
+<script type="text/javascript" src="inc/lib/jQuery.bubbletip-1.0.6.js"></script>
+<link type="text/css" href="inc/lib/bubbletip/bubbletip.css" rel="stylesheet" />
+
+<!-- Course -->
+<script type="text/javascript" src="inc/scripts/toggler.js"></script>
+<link rel="stylesheet" type="text/css" href="inc/css/course.css" />
+
+<!-- Email -->
+<script type="text/javascript" src="inc/scripts/email.js"></script>
+
+<!-- Calendar -->
+<link rel="stylesheet" type="text/css" href="inc/css/calendar.css" />
+<script type="text/javascript" src="inc/scripts/calendar.js"></script>
+<script type="text/javascript" src="inc/scripts/staff.js"></script>
+<link rel="stylesheet" type="text/css" href="inc/css/staff.css" />
+<script type="text/javascript">
+  // Default subject of all emails
+  setEmailSubject("15-122");
+  var autolab    = "https://autolab.andrew.cmu.edu/courses/15122-s20";
+  //  var qatoolname = "Piazza";
+  //  var qatool     = "https://piazza.com/cmu/spring2020/15122";
+  var qatoolname = "Diderot";
+  var qatool     = "https://www.diderot.one/course/23/";
+  var gradescope = "https://www.gradescope.com/courses/76833";
+  var logistics  = "https://enr-apps.as.cmu.edu/open/SOC/SOCServlet/courseDetails?COURSE=15122&SEMESTER=S20";
+  var grades     = "https://pic.cs.cmu.edu/s20/grades/login/index.php";
+// TODO
+  var checkinURL = "https://NOT_YET_AVAILABLE/index.php?checkmein=true";
+  var queueURL = "https://q.15122.tk/";
+  var lectureURL = ["https://cmu.zoom.us/j/197720324",  // lec.1
+                    "https://cmu.zoom.us/my/dilsunk"    // lec.2
+                   ];
+
+  function mkRemoteLinks() {
+    var s  =  "<b>Zoom:</b> &nbsp; ";
+        s += "<a href='" + lectureURL[0] + "'>lecture 1</a>";
+        s += ", &nbsp; ";
+        s += "<a href='" + lectureURL[1] + "'>lecture 2</a>";
+    return s;
+  }
+
+  function mkZoomLink(lec) {
+    return "<a href='" + lectureURL[lec-1] + "'>Zoom</a>";
+  }
+
+  // setWeek(sat,sun,mon,tue,wed,thu,fri)
+  // values in 'weekend', 'noclass', '*lecture*', '*recitation*'
+  //setWeek('weekend', 'weekend', 'lab', 'lecture',
+  //        'noclass', 'lecture', 'recitation');
+  setWeek(weekend, weekend, lab, lecture, noclass, lecture, recitation);
+  setSemester(2020, 1,13, 5, 1);  // setSemester(y, bm,bd, em,ed)
+  setExams(2020, 5,4, 5,12);      // setExams(y, bm,bd, em,ed)
+  setBreak(2020, 3,9, 3,13);      // setBreak(y, bm,bd, em,ed)
+  addHoliday(2020, 1,20);         // Labor Day/Martin Luther King Day
+  addHoliday(2020, 3,6);          // Mid semester
+addHoliday(2020, 3,16);         // Covid-19
+addHoliday(2020, 3,17);         // Covid-19
+addHoliday(2020, 3,18);         // Covid-19
+addHoliday(2020, 3,19);         // Covid-19
+addHoliday(2020, 3,20);         // Covid-19
+//  addHoliday(2020, 4,16);         // Thanksgiving/Carnival
+//  addHoliday(2020, 4,17);         // Thanksgiving/Carnival
+//  addHoliday(2020, 4,18);         // Thanksgiving/Carnival
+  addExam('Midterm', 2020, 2,20,  // addExam(type, year,month,day,
+          '12.5%', '1-8', +4);    //         percent,learning,corrected)
+//  addExam('Midterm', 2020, 4,2,   // addExam(type, year,month,day,
+//          '12.5%', '1-8', +2);    //         percent,learning,corrected)
+  setFinal(2020, 5,4,            // setFinal(year,month,day,
+          '8:30-11:30',null,             //         time,room,
+          '25%', '1-27', +2);     //         percent,learning,corrected)
+
+  // addHw(type,year,month,day, percent,learning, posted,corrected)
+// Wr before midterms are 0.9%, others are 1.2%
+  addHw('Wr', 2020, 1,20, '1.2%', '1-3,11',     -7,+2, gradescope); // 1
+  addHw('Wr', 2020, 1,27, '1.2%', '1-3',        -7,+2, gradescope); // 2
+  addHw('Wr', 2020, 2, 3, '1.2%', '1,2,4,12',   -7,+2, gradescope); // 3
+  addHw('Wr', 2020, 2,10, '1.2%', '1-4,21,27',  -7,+2, gradescope); // 4
+  addHw('Wr', 2020, 2,17, '0.9%', '6-10,15-17', -7,+2, gradescope); // 5
+  addHw('Wr', 2020, 2,24, '1.2%', '6-8,12,17',  -7,+2, gradescope); // 6
+  addHw('Wr', 2020, 3, 2, '1.2%', '9,17,24,27', -7,+2, gradescope); // 7
+  addHw('Wr', 2020, 3,23, '1.2%', '12,24,27',  -21,+2, gradescope); // 8
+  addHw('Wr', 2020, 3,30, '1.2%', '9,10,25-27', -7,+2, gradescope); // 9
+  addHw('Wr', 2020, 4, 6, '0.9%', '2,13,25,27', -7,+2, gradescope); // 10
+  addHw('Wr', 2020, 4,13, '1.2%', '18-20',      -7,+2, gradescope); // 11
+  addHw('Wr', 2020, 4,20, '1.2%', '19,20',      -7,+2, gradescope); // 12
+  addHw('Wr', 2020, 4,27, '1.2%', '5,20,27',    -7,+2, gradescope); // 13
+
+  addHw('Pg', 2020, 1,23, '2.5%', '1,12',     -7,+2, autolab); // 1
+  addHw('Pg', 2020, 1,30, '2.5%', '12,15,16', -7,+2, autolab); // 2
+  addHw('Pg', 2020, 2, 6, '2.5%', '1,12-16',  -7,+2, autolab); // 3
+  addHw('Pg', 2020, 2,13, '2.5%', '1,18,17',  -7,+2, autolab); // 4
+  addHw('Pg', 2020, 2,27, '2.5%', '5,12,27',  -7,+2, autolab); // 5
+//addHw('Pg', 2020,10,17, '1.6%', '10',       -7,+2, autolab); // 6
+  addHw('Pg', 2020, 3, 5, '2.5%', '10',       -7,+2, autolab); // 6
+//addHw('Pg', 2020,10,24, '3.4%', '1,12-18', -14,+2, autolab); // 7
+  addHw('Pg', 2020, 3,26, '2.5%', '1,12-18', -21,+2, autolab); // 7
+  addHw('Pg', 2020, 4, 2, '2.5%', '8,10-18',  -7,+2, autolab); // 8
+  addHw('Pg', 2020, 4, 9, '2.5%', '9,12-18',  -7,+2, autolab); // 9
+  addHw('Pg', 2020, 4,16, '2.5%', '10,15-20', -7,+2, autolab); // 10
+  addHw('Pg', 2020, 4,23, '2.5%', '5,15-20',  -7,+2, autolab); // 11
+  addHw('Pg', 2020, 4,30, '2.5%', '5,15-20', -14,+2, autolab); // 12
+
+  addInstructor("Iliano Cervesato", MEA("iliano", "cmu", "edu"),
+                "iliano.jpg", "http://cs.cmu.edu/~iliano",
+                [officeHours("M", "14:00", 60, "GHC 6007", null),
+                 officeHours("R", "14:00", 60, "GHC 6007", "Conceptual OH"),
+                 specialOfficeHours("M-F 12:10-12:40 (GHC 6 commons)<br>"+
+                                    "<span class='ohcomment'>Lunch OH</span>")]);
+  addOHonly([officeHours("M", "12:00", 30, "GHC 6 commons", "Lunch OH"),
+             officeHours("T", "12:00", 30, "GHC 6 commons", "Lunch OH"),
+             officeHours("W", "12:00", 30, "GHC 6 commons", "Lunch OH"),
+             officeHours("R", "12:00", 30, "GHC 6 commons", "Lunch OH"),
+             officeHours("F", "12:00", 30, "GHC 6 commons", "Lunch OH")]);
+  addOHonly([officeHours("T", "6:00pm", 60, "GHC 4211", null),
+             officeHours("T", "7:00pm", 60, "GHC 4211", null)]);
+  addInstructor("Dilsun Kaynar", MEA("dilsun", "cs", "cmu", "edu"),
+                "dilsun.jpg", "https://cs.cmu.edu/~dilsun",
+                [officeHours("M", "13:00", 90, "GHC 6009", null),
+                 officeHours("T", "13:00", 90, "GHC 6009", null),
+                 specialOfficeHours("By appointment at other times")]);
+
+
+  addStaff('mascot', "Honk! ", "honk@andrew.cmu.edu",
+  ['honk-bfly.jpg', 'honk-love.jpg', 'honk-irish.jpg', 'honk-berry.jpg'],
+  "https://www.instagram.com/honk15122/",
+  null, []);
+
+
+  addAA("Marcie Baker", MEA("marcella", "cs", "cmu", "edu"),
+        "marcella.jpg", null, "GHC 6006");
+
+  function aMEA(id) { return MEA(id, "andrew", "cmu", "edu"); }
+/*addTA("Example TA", MEA("ta", "cs", "cmu", "edu"),
+                null, "http://www.cs.cmu.edu/~15122ta/",
+                [officeHours("F", "7:00pm", 60, "GHC 4307", null),
+                 officeHours("S", "1:30pm", 60, "GHC ta5", "Conceptual OH"),
+                 specialOfficeHours("TBA")]);
+*/
+
+addTA("Prashanti Anderson", aMEA("paanders"), "paanders.jpg", null,
+      [officeHours("F", "6:00pm", 60, "GHC 5222", null),
+       officeHours("F", "7:00pm", 60, "GHC 5222", null)]);
+addTA("Nikita Basu",    aMEA("nbasu"), "nbasu.jpg", null,
+      [officeHours("M", "6:00pm", 60, "DH A302", null),
+       officeHours("M", "7:00pm", 60, "DH A302", null)]);
+addTA("Ishan Bhargava",    aMEA("ibhargav"), "ibhargav.jpg",
+      "https://www.andrew.cmu.edu/user/ibhargav/",
+      [officeHours("F", "6:00pm", 60, "GHC 5222", null),
+       officeHours("F", "7:00pm", 60, "GHC 5222", null)]);
+addTA("Ludi Cao",    aMEA("ludic"), "ludic.jpg", null,
+      [officeHours("W", "8:00pm", 60, "NSH 4305", null),
+       officeHours("W", "9:00pm", 60, "NSH 4305", null)]);
+addTA("Elizabeth Carney",    aMEA("evc"), "evc.jpg", null,
+      [officeHours("S", "4:00pm", 60, "GHC 4102", null),
+       officeHours("S", "5:00pm", 60, "GHC 4102", null)]);
+addTA("Justine Cho", aMEA("justinec"), "justinec.jpg", null,
+      [officeHours("U", "2:00pm", 60, "GHC 4215", null),
+       officeHours("U", "3:00pm", 60, "GHC 4215", null)]);
+addTA("Ethan Chu",    aMEA("ethanchu"), "ethanchu.jpg", null,
+      [officeHours("U", "4:00pm", 60, "GHC 4215", null),
+       officeHours("U", "5:00pm", 60, "GHC 4215", null)]);
+addTA("Joe Finn", aMEA("jafinn"), "jafinn.jpg", null,
+      [officeHours("U", "4:00pm", 60, "GHC 4215", null),
+       officeHours("U", "5:00pm", 60, "GHC 4215", null)]);
+addTA("Joon Jang",    aMEA("jiwoongj"), "jiwoongj.jpg", null,
+      [officeHours("S", "4:00pm", 60, "GHC 4102", null),
+       officeHours("S", "5:00pm", 60, "GHC 4102", null)]);
+addTA("Emma Jin", aMEA("eljin"), "eljin.jpg", null,
+      [officeHours("W", "8:00pm", 60, "NSH 4305", null),
+       officeHours("W", "9:00pm", 60, "NSH 4305", null)]);
+addTA("Yating Han", aMEA("yatingh"), "yatingh.jpg", null,
+      [officeHours("T", "8:00pm", 60, "Posner 152", null),
+       officeHours("T", "9:00pm", 60, "Posner 152", null)]);
+addTA("Evelyn Kuo",    aMEA("evelynk"), "evelynk.jpg", null,
+      [officeHours("F", "6:00pm", 60, "GHC 5222", null),
+       officeHours("F", "7:00pm", 60, "GHC 5222", null)]);
+addTA("Pranav Kumar",  aMEA("pmkumar"), "pmkumar.jpg",
+      "http://pranavkumar.me",
+      [officeHours("M", "6:00pm", 60, "DH A302", null),
+       officeHours("M", "7:00pm", 60, "DH A302", null)]);
+addTA("Simon Lee",    aMEA("seungyul"), "seungyul.jpg", null,
+      [officeHours("W", "8:00pm", 60, "NSH 4305", null),
+       officeHours("W", "9:00pm", 60, "NSH 4305", null)]);
+addTA("Austin Leung",    aMEA("austinle"), "austinle.jpg", null,
+      [officeHours("W", "6:00pm", 60, "NSH 4305", null),
+       officeHours("W", "7:00pm", 60, "NSH 4305", null)]);
+addTA("Kayla Leung", aMEA("kyleung"), "kyleung.jpg",
+      "http://itspossiblelab.com",
+      [officeHours("R", "6:00pm", 60, "GHC 5222", "Conceptual OH"),
+       officeHours("R", "7:00pm", 60, "GHC 5222", "Conceptual OH")]);
+addTA("Alex Lin",    aMEA("xiaoranl"), "xiaoranl.jpg", null,
+      [officeHours("T", "8:00pm", 60, "Posner 152", null),
+       officeHours("T", "9:00pm", 60, "Posner 152", null)]);
+addTA("Joel Manning",    aMEA("jamannin"), "jamannin.jpg", null,
+      [officeHours("S", "2:00pm", 60, "GHC 4102", null),
+       officeHours("S", "3:00pm", 60, "GHC 4102", null)]);
+addTA("Aaron Meyers",     aMEA("ameyers"),  "ameyers.jpg",  null,
+      [officeHours("R", "6:00pm", 60, "GHC 5222", "Conceptual OH"),
+       officeHours("R", "7:00pm", 60, "GHC 5222", "Conceptual OH")]);
+addTA("Chiara Mrose",     aMEA("cmrose"),  "cmrose.jpg",  null,
+      [officeHours("S", "2:00pm", 60, "GHC 4102", null),
+       officeHours("S", "3:00pm", 60, "GHC 4102", null)]);
+addTA("Riya Patel", aMEA("riyap"), "riyap.jpg", null,
+      [officeHours("S", "2:00pm", 60, "GHC 4102", null),
+       officeHours("S", "3:00pm", 60, "GHC 4102", null)]);
+addTA("Cooper Pierce",    aMEA("cppierce"), "cppierce.jpg", null,
+      [officeHours("U", "2:00pm", 60, "GHC 4215", null),
+       officeHours("U", "3:00pm", 60, "GHC 4215", null)]);
+addTA("Sanjana Pruthi",    aMEA("spruthi"), "spruthi.jpg", null,
+      [officeHours("W", "8:00pm", 60, "NSH 4305", null),
+       officeHours("W", "9:00pm", 60, "NSH 4305", null)]);
+addTA("Samantha Ramsey",  aMEA("sramsey"), "sramsey.jpg", null,
+      [officeHours("W", "6:00pm", 60, "NSH 4305", null),
+       officeHours("W", "7:00pm", 60, "NSH 4305", null)]);
+addTA("Riccardo Santoni", aMEA("rsantoni"), "rsantoni.jpg", null,
+      [officeHours("U", "2:00pm", 60, "GHC 4215", null),
+       officeHours("U", "3:00pm", 60, "GHC 4215", null)]);
+addTA("Rebecca Stevens",    aMEA("rstevens"), "rstevens.jpg", null,
+      [officeHours("F", "6:00pm", 60, "GHC 5222", null),
+       officeHours("F", "7:00pm", 60, "GHC 5222", null)]);
+addTA("Alex Stanescu",    aMEA("astanesc"), "astanesc.jpg", null,
+      [officeHours("W", "6:00pm", 60, "NSH 4305", null),
+       officeHours("W", "7:00pm", 60, "NSH 4305", null)]);
+addTA("Sabrina Sukhin", aMEA("ssukhin"), "ssukhin.jpg", null,
+      [officeHours("T", "8:00pm", 60, "Posner 152", null),
+       officeHours("T", "9:00pm", 60, "Posner 152", null)]);
+addTA("Brent Xiao",    aMEA("brentx"), "brentx.jpg", null,
+      [officeHours("W", "8:00pm", 60, "NSH 4305", null),
+       officeHours("W", "9:00pm", 60, "NSH 4305", null)]);
+addTA("Ruiran Xun", aMEA("rxun"), "rxun.jpg", null,
+      [officeHours("T", "8:00pm", 60, "Posner 152", null),
+       officeHours("T", "9:00pm", 60, "Posner 152", null)]);
+addTA("Hesper Yin",    aMEA("hyin2"), "hyin2.jpg", null,
+      [officeHours("M", "6:00pm", 60, "DH A302", null),
+       officeHours("M", "7:00pm", 60, "DH A302", null)]);
+addTA("Kelly Yu", aMEA("kellyyu"), "kellyyu.jpg", null,
+      [officeHours("U", "4:00pm", 60, "GHC 4215", null),
+       officeHours("U", "5:00pm", 60, "GHC 4215", null)]);
+addTA("Angela Zhang",    aMEA("angelaz1"), "angelaz1.jpg", null,
+      [officeHours("W", "6:00pm", 60, "NSH 4305", null),
+       officeHours("W", "7:00pm", 60, "NSH 4305", null)]);
+addTA("Lora Zhou",    aMEA("lbzhou"), "lbzhou.jpg", null,
+      [officeHours("M", "6:00pm", 60, "DH A302", null),
+       officeHours("M", "7:00pm", 60, "DH A302", null)]);
+
+  go();                          // runs initialization scripts
+
+  var author = staff[0].email;
+
+  $(document).ready(function () {
+     $("[rel='tipsy']").tipsy({gravity:'n', delayIn: 350, delayOut: 100, fade: true});
+     $('a.qatoolname').text(qatoolname);
+     $('a.qatool').attr("href", qatool);
+     $('a.gradescope').attr("href", gradescope);
+     $('a.autolab').attr("href", autolab);
+     $('a.grades').attr("href", grades);
+     $('a.logistics').attr("href", logistics);
+     $('#authorEmail').html(eMail(author));
+     $('.contactInstr').html(function (idx, oldtxt) {
+                               return hMail(oldtxt, emailByRole ("instructor"));
+                            });
+     $('#email_addr').attr("value", mAddrs(emailByRole("instructor")));
+     $('#classCalendar').html(buildCalendar());
+     $('#courseworkCalendar').html(buildWorkCalendar());
+     peopleFaces();
+     $('a.lec1').html(mkZoomLink(1));
+     $('a.lec2').html(mkZoomLink(2));
+  });
+</script>
+</head>
+
+
+<body>
+<div class="top">
+
+<table class="title">
+<tr>
+ <td class="logo">
+   <a href="http://www.cmu.edu">
+    <img class="logo" style="height:51px; padding-right: 0; border: 2px solid white;" src="inc/img/cmu-logo.png">
+   </a>
+ </td>
+ <td class="courseName">
+   CS 15-122: Principles of Imperative Computation
+  <br>(Spring 2020)
+ </td>
+ <td class="logo">
+   <a href="http://www.cs.cmu.edu">
+    <img class="logo" src="inc/img/scs-logo.gif">
+   </a>
+ </td>
+</tr>
+</table>
+
+<ul class="menu">
+<li class="menu"><a class="menu" href="home.shtml">Home</a></li>
+<li class="menu"><a class="menu" href="about.shtml"
+    rel="tipsy" title="Objectives, resources and policies">About</a></li>
+<li class="menu"><a class="menu" href="staff.shtml"
+    rel="tipsy" title="Instructors and TAs">Staff</a></li>
+<li class="menu"><a class="menu" href="schedule.shtml"
+    rel="tipsy" title="Lectures, labs and recitations">Schedule</a></li>
+<li class="menu"><a class="menu qatool qatoolname" href=""
+    rel="tipsy" title="This is our discussion board">Diderot</a></li>
+<li class="menu"><a class="menu gradescope" href=""
+    rel="tipsy" title="This is where you submit your written assignments">Gradescope</a></li>
+<li class="menu"><a class="menu autolab" href=""
+    rel="tipsy" title="This is where you submit your programming assignments">Autolab</a></li>
+<li class="menu"><a class="menu" href="quiz.shtml"
+    rel="tipsy" title="Today's quiz (if any)">Quiz</a></li>
+<li class="menu"><a class="menu grades"  href=""
+    rel="tipsy" title="This where you can see your grades (and more)">Grades</a></li>
+</ul>
+</div>
+<br>

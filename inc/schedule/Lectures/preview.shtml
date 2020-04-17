@@ -1,0 +1,46 @@
+<div class="lecture-title">
+  A mysterious function ...
+</div>
+
+<div class="lecture-summary">
+  We examine a program we know nothing about, making hypotheses about
+  what it is supposed to do.  We notice that this function has no
+  meaningful output for some inputs, which leads us to restricting its
+  valid inputs using preconditions.  We use a similar mechanism,
+  postconditions, to describe the value it returns.  Along the way, we
+  get acquainted to C0 and its support for checking pre- and
+  post-conditions.  We then notice that this function doesn't return
+  the expected outputs even for some valid inputs ...
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption">Concepts:</span>
+    <ul class="lecture-material-list">
+    <li>Pre- and post-conditions</li>
+    <li>Testing</li>
+    <li>Contract support in C0</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption">Readings:</span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/01-contracts.pdf">Lecture notes</a>
+      (sections 1-2, 9-11)</li>
+    <li><a href="slides/review/01-contracts.pdf">Review slides</a>
+      (through "Loop Invariants")</li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69092528-e6a5-4802-9825-244b20ca9e04">Lecture video</a></li>
+      <li><a class="code" href="code/01-contracts.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture 2 slides: concept highlights only"
+             href="slides/inclass/dilsun-00-contracts.pdf">In-class slides</a></li>
+    </ul>
+  </div>
+
+</div>
+</div>

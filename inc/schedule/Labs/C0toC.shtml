@@ -1,0 +1,16 @@
+<div class="lecture-title">
+  Once you C1 you C them all
+</div>
+
+<div class="lecture-summary">
+  This lab practices using translating C0 code to C and managing
+  memory leaks.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <ul class="lecture-material-list">
+    <li><a class="qatool">Exercises</a></li>
+    </ul>
+  </div>
+</div>

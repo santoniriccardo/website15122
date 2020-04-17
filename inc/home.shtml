@@ -1,0 +1,132 @@
+<script>
+//var mail_script = 'course_feedback.php';
+var mail_script = 'https://pic.cs.cmu.edu/s20/course_feedback.php';
+function send_feedback(event) {
+  event.preventDefault();  // stop form from submitting normally
+  $.post(mail_script,
+         { course_id:  $('#course_id').val(),
+           email_addr: $('#email_addr').val(),
+           feedback:   $('#feedback').val()
+         }/*,
+         function() {
+           alert("Your feedback has been received.  Thank you!");
+         }*/);
+  alert("Your feedback has been received.  Thank you!");
+  $('#feedback-form').html("<div class='feedback-ack'>Your feedback has been received.  Thank you!</div>");
+}
+$(function () {
+  $('#feedback-form').submit(send_feedback);
+});
+</script>
+
+<h1 id="INFORMATION">Course Information
+<span class="shortcut">
+&nbsp;[&nbsp; <a href="#LOGISTICS">Logistics</a>
+&nbsp;|&nbsp; <a href="#CALENDAR">Calendar of Classes</a>
+&nbsp;|&nbsp; <a href="#DUE">Coursework Calendar</a>
+&nbsp;|&nbsp; <a href="#OH">Office Hours</a>
+&nbsp;]
+</span></h1>
+
+<div style="float:right;margin-right:0.5em;">
+<form id="feedback-form">
+<label>Please give us feedback about how 15-122 can be improved:
+</label><br />
+<label style="margin-left:2.5em;"><small>If you need an answer,  <span class="contactInstr">email the instructors</span> instead
+</small></label><br />
+<input type="hidden" id="course_id" name="course_id" value="15-122">
+<input type="hidden" id="email_addr" name="email_addr" value="">
+<textarea id="feedback" name="feedback" cols="48" rows="5"
+          placeholder="Enter your comments anonymously here"></textarea><br />
+<input type="submit" name="submit_feedback" id="submit_feedback"
+       value="Submit" />  <small>(Your comments will be sent <em>anonymously</em> to the instructors)</small>
+</form>
+</div>
+
+<h2 id="LOGISTICS">Logistics</h2>
+
+<div>
+<table>
+  <tr><th>Labs:</th>
+    <td align=right> M,&nbsp;</td>
+    <td><a class="logistics" href=""><em>between</em> 9:30am <em>and</em> 5:20pm</a>&nbsp;</td>
+    <td><em>(<a class="logistics" href="">varies by section</a>)</em></td>
+  </tr>
+  <tr><th>Lectures:</th>
+    <td align=right>TR,&nbsp;</td>
+    <td>09:00-10:20am <em></td>
+    <td>(<a class="lec1"></a>)</td>
+  <tr><td align=right><em>or</em>&nbsp;</td>
+    <td align=right>TR,&nbsp;</td>
+    <td>10:30-11:50am&nbsp;</td>
+    <td>(<a class="lec2"></a>)</td>
+  </tr>
+  <tr><th>Recitations:</th>
+    <td align=right> F,&nbsp;</td>
+    <td><a class="logistics" href=""><em>between</em> 9:30am <em>and</em> 5:20pm</a>&nbsp;</td>
+    <td><em>(<a class="logistics" href="">varies by section</a>)</em></td>
+  </tr>
+</table>
+</div>
+<div style="margin:1.5ex 0 -1ex 0;">
+      <b>Class web page</b>:
+      <a href="https://cs.cmu.edu/~15122">https://cs.cmu.edu/~15122</a>
+</div>
+<div style="margin:1.5ex 0 -1ex 0;">
+  <b><a href="syllabus.shtml">Course syllabus</a></b>
+</div>
+<br clear="all" />
+
+
+<h2 id="CALENDAR">Calendar of Classes
+  <span class="ical" rel="tipsy"
+        title="Use this link to import the calendar of classes and the
+  homework deadlines in your favorite calendar application">[<a href="https://calendar.google.com/calendar/ical/andrew.cmu.edu_cpp6gs15ualpdlubikpr1p1q0g%40group.calendar.google.com/public/basic.ics">iCal format</a>]</span></h2>
+
+<p style="margin-bottom:5px">
+Click on a class day to go to that particular lecture or recitation.  Due
+dates for homeworks are set in <span class="hwdue">bold</span>.  The due date
+of the <em>next</em> homework blinks.
+</p>
+<div id="classCalendar" style="page-break-inside:avoid;"></div>
+
+
+<h2 id="DUE">Coursework Calendar</h2>
+
+<script>document.write(sortAndPrintList(compareByDate,
+  [nextHwDue('written homework', 'Wr',
+             'at 9pm on <a href="" class="gradescope">Gradescope</a>'),
+   nextHwDue('programming homework', 'Pg',
+             'at 9pm on <a href="" class="autolab">Autolab</a>'),
+   nextExam()]));</script>
+
+<div id="courseworkCalendar" style="page-break-inside:avoid;"></div>
+
+<!--p>
+  Note the submission deadlines for written and programming
+  assignments are inverted between midterm 2 and
+  Carnival.
+  Thanksgiving.
+</p-->
+
+<h2 id="OH">Office Hours
+  <span class="ical" rel="tipsy"
+        title="Use this link to import the office hours calendar in your favorite calendar application">[<a href="https://calendar.google.com/calendar/ical/andrew.cmu.edu_oclvc5roik51hr1ak1i29iavd8%40group.calendar.google.com/public/basic.ics">iCal format</a>]</span></h2>
+
+<iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=450&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=andrew.cmu.edu_oclvc5roik51hr1ak1i29iavd8%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0" width="844" height="450" frameborder="0" scrolling="no"></iframe>
+<!--script>document.write(printOHschedule());</script-->
+
+<p>
+<b>Office hour rules:</b>
+<ul>
+<li>Thursday is <em>conceptual office hours</em>, no help will be
+  provided on the programming homework due that same day &mdash;
+  manage your time carefully!</li>
+<li><em>Lunch office hours</em> are for general questions that do not
+  require a laptop or a pen and that can be asked in a public space;
+  their time is approximate</li>
+<li>Office hours are not where you do homework, with a TA around in
+  case you get stuck: go to office hour if you thought about your
+  problem for some time and are still stuck</li>
+</ul>
+</p>

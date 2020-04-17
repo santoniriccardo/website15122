@@ -1,0 +1,15 @@
+<div class="lecture-title">
+  This One's a Treet
+</div>
+
+<div class="lecture-summary">
+  This lab practices using dictionaries to avoid recomputing values.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <ul class="lecture-material-list">
+    <li><a class="qatool">Exercises</a></li>
+    </ul>
+  </div>
+</div>

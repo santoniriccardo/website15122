@@ -1,0 +1,52 @@
+<div class="lecture-title">
+  C's Memory Model
+</div>
+
+<div class="lecture-summary">
+  C provides a very flexible view of memory, which allows writing
+  potentially dangerous code unless one is fully aware of the
+  consequences of one's decision.  This lecture is about building this
+  awareness.  We see that, while C overlays an organization on the
+  monolithic block of memory the operating systems assigns to a
+  running program, it also provides primitives that allow violating
+  this organization.  We focus on two such primitives, pointer
+  arithmetic and address-of.  While some uses are legitimate, others
+  are not.  C's approach to many non-legitimate operations is to
+  declare them undefined, which means that what happens when a program
+  engages in them is decided by the specific implementation of the C
+  compiler in use.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>C's memory layout</li>
+    <li>Pointer arithmetic</li>
+    <li>Undefined behavior</li>
+    <li>The address-of operator</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/20-mem.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/20-mem.pdf">Review slides</a></li>
+    <li><a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf">The C99 standard</a> (all 552 pages of it)</li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=38e40b67-9068-45db-8490-b16328a3e76e">Lecture video</a></li>
+      <li><a class="code" href="code/20-mem.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-20-mem.pdf">In-class slides</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

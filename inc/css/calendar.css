@@ -1,0 +1,232 @@
+/* Styles for the compact calendar */
+
+.main {
+  width:100%;
+  border:0px solid black;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+.month {
+  font-size: 0.8em;
+  font-family: Tahoma;
+  background-color:LIGHTGRAY;
+  font-weight: bold;
+  color: BLACK;
+  border-bottom-width: medium;
+  text-align: center;
+}
+
+.daysofweek {
+  font-size: 0.8em;
+  font-family: Tahoma;
+  font-weight: bold;
+  color: BLACK;
+  text-align: center;
+}
+
+.days {
+  font-size: 0.8em;
+  font-family: Tahoma;
+  color: BLACK;
+  background-color: lightyellow;
+  text-align: center;
+  padding: 1px 2px;
+  margin: 2px;
+}
+
+a {text-decoration: none;}
+a.calendar:link, a.calendar:visited {color: DARKBLUE;}
+a.calendar:hover, a.calendar:active {color: #FF00FF;}
+
+.today{
+  color: BLACK;
+  border: 2px solid RED;
+}
+.lecture {
+  color:BLACK;
+  background: #DDF8FF;
+}
+.recitation {
+  color: BLACK;
+  background: #CCCCCC;
+}
+.lab {
+  color: BLACK;
+  background: #EEEEEE;
+}
+.noclass {
+  color: BLACK;
+  background: LIGHTYELLOW;
+}
+.exam {
+  color: BLACK;
+  background: #FFDDDD;
+}
+.noday {
+  color: #FAFFFF;
+}
+.vacation {
+  color: BLACK;
+  background: LIGHTYELLOW;
+}
+.break, .holiday {
+  color: BLACK;
+  background: AQUAMARINE;
+}
+.weekend {
+  color: GRAY;
+  background: LIGHTYELLOW;
+}
+.final {
+  color:BLACK;
+  background: #FFAAAA;
+}
+.hwdue {
+  font-weight: bold;
+}
+.hwnext {
+  XXtext-decoration: blink;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Styles for the class schedule */
+
+.classweek {
+  border: 0.5px inset black;
+  padding: 2px;
+  width: 100%;
+  margin-bottom: 1.5ex;
+}
+
+.classday {
+  page-break-inside: avoid;
+}
+
+.schedule-lecture-id {
+  vertical-align:top;
+  width: 85px;
+  border: 0.5px inset black;
+  padding: 2px;
+}
+.schedule-top {
+  text-align:left;
+  margin-bottom:5pt;
+}
+.schedule-date {
+  font-weight:bold;
+  white-space: nowrap;
+}
+.schedule-lectureN {
+  white-space: nowrap;
+}
+
+.schedule-lecture-body {
+  border: 0.5px inset black;
+}
+.lecture-title {
+  font-weight:bold;
+  margin: 2pt 0pt 0pt 0pt;
+  padding-left: 3pt;
+}
+.lecture-summary {
+  margin: 5pt 20pt 5pt 20pt;
+  font-style:italic;
+  text-align:justify;
+}
+.lecture-readings {
+  width:100%;
+  margin: 8pt 0pt 0pt 0pt;
+  XXpadding: 0pt 10pt 0pt 0pt;
+}
+.readings-concepts {
+  float: left;
+  padding: 0pt 3pt 0pt 0pt;
+  margin: 0pt 0pt 5pt 5pt;
+  width: 48%;
+  xxbackground: green;
+}
+.readings-further {
+  float: right;
+  padding: 0pt 3pt 0pt 0pt;
+  margin: 0pt 0pt 5pt 0pt;
+  width: 49%;
+  xxbackground: red;
+}
+.lecture-material-caption {
+  font-weight:bold;
+  font-style:italic;
+  color:black;
+  white-space:nowrap;
+}
+.lecture-material-list {
+  margin: 2pt 0pt 0pt -10pt;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/* Style for the coursework calendar */
+.workCal {
+  font-size: 0.8em;
+  font-family: Tahoma;
+  width: 100%;
+  page-break-inside:avoid;
+  margin-bottom: 1ex;
+}
+
+.hw {
+  background:LIGHTYELLOW;
+}
+.points, .learning {
+  font-size: smaller;
+  font-weight: normal;
+}
+.learning {
+  font-style: italic;
+}
+.rowType {
+  background:lightgray;
+  font-weight:bold;
+  width:75px;
+  padding-top: 0.75ex;
+  padding-bottom: 0.75ex;
+}
+.posted {
+  font-weight:normal;
+  font-style:normal;
+}
+.due {
+  font-weight:bold;
+  font-style:normal;
+}
+.corrected {
+  font-weight:normal;
+  font-style:italic;
+}
+
+
+/* Styles used by jQuery */
+
+.summary, .details {
+  font-weight: bold;
+  color: red;
+  padding: 0px;
+  font-size: 7px;
+}
+@media print {
+  .schedule-top { display: none; }
+}

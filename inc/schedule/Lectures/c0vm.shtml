@@ -1,0 +1,52 @@
+<div class="lecture-title">
+  Program as Data: the C0VM
+</div>
+
+<div class="lecture-summary">
+  Getting a program written in a high-level language to run onto the
+  machine hardware can be achieved in a number of ways, with
+  compilation to machine code and interpretation of the source
+  language as the two extremes.  We assess the benefits and drawbacks
+  of each and introduce virtual machines as a modern trade-off.  We
+  explore this possibility through the C0VM, a virtual machine for C0.
+  A compilation phase takes C0 code as input and outputs bytecode that
+  can be run by the C0VM.  We examine in depth the organization of the
+  C0VM itself, understanding how its instructions are executed through
+  a description called an operational semantics.  We also describe
+  some of the data structures needed to implement the C0VM itself.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Interpreters vs. compilers</li>
+    <li>Virtual machines</li>
+    <li>Programs as data</li>
+    <li>Transformation to bytecode</li>
+    <li>Operational semantics</li>
+    <li>Bytecode validation</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/22-c0vm.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/22-c0vm.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a0dae5e1-b91b-48a8-929a-5af913e321ce">Lecture video</a></li>
+      <li><a class="code" href="code/22-c0vm.tgz">Code</a></li>
+      <!--li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-22-c0vm.pdf">In-class slides</a></li-->
+    </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="lecture-title">
+  Big-O
+</div>
+
+<div class="lecture-summary">
+  We examine big-O notation as a mathematical tool to describe the
+  running time of algorithms, especially for the purpose of comparing
+  two algorithms that solve the same problem.  As a case study, we use
+  the problem of sorting an array, and for now a single sorting
+  algorithm, selection sort.  As we implement selection sort, we see
+  that starting with contracts gives us high confidence that the
+  resulting code will work correctly.  Along the way, we develop a
+  useful library of functions about sorted arrays to be used in
+  contracts.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+      <li>Big-O notation</li>
+      <li>Selection sort</li>
+      <li>Deliberate programming</li>
+      <li>Asymptotic complexity analysis</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li>Lecture notes
+        (<a rel="tipsy" title="Material with interactive exercises"
+            href="oli-05.shtml">oli</a>,
+         <a rel="tipsy" title="Material in PDF format"
+            href="handouts/05-bigo.pdf">pdf</a>)</li>
+    <li><a href="slides/review/05-bigo.pdf">Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=491574e5-d23e-4c92-8839-ae0266ae1281">Lecture video</a></li>
+      <li><a class="code" href="code/arrayutil.c0">arrayutil.c0</a></li>
+      <li><a class="code" href="code/05-bigo.tgz">Code</a></li>
+      <li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-05-bigo.pdf">In-class slides</a></li>
+      <br><br>
+      <li><a href="http://www.youtube.com/watch?v=Ns4TPTC8whw">Selection sort folk dance</a></li>
+    </ul>
+    </div>
+
+  </div>
+</div>

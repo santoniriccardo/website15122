@@ -1,0 +1,17 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lectures 0 and 1</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374bb90a0001dc2f3d7ec5f42fc6fe">Preconditions</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374bcd0a0001dc002411fdb9838d97">Reasoning About Contracts</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374be40a0001dc2c35e133d71b6cdf">Postconditions and Testing</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374bfe0a0001dc6773f16d718e6245">Proving Functions Correct</a></li>
+</ol>
+
+<!--#include virtual="inc/bottom.shtml"-->

@@ -1,0 +1,46 @@
+<div class="lecture-title">
+  Representing Graphs
+</div>
+
+<div class="lecture-summary">
+  Graphs provide a uniform way to represent many complex problems, for
+  example the moves of a game.  We define a minimal interface for
+  working with undirected graphs and discuss two implementation
+  strategies: adjacency matrices and adjacency lists, emphasizing the
+  pros and cons of each.  We also notice that not all graph-based
+  problems need &mdash; or can &mdash; use an explicit representation
+  of the underlying graph.
+</div>
+
+<div class="remoteLinks"></div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    <li>Graphs</li>
+    <li>Implicit vs. explicit graphs</li>
+    <li>Adjacency matrices</li>
+    <li>Adjacency lists</li>
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    <li><a href="handouts/23-graphs.pdf">Lecture notes</a></li>
+    <li><a href="slides/review/23-graphs.pdf"><b>DRAFT</b> Review slides</a></li>
+    </ul>
+
+    <div class="resources">
+    <span class="lecture-material-caption caption-resources"></span>
+    <ul class="lecture-material-other">
+      <li><a class="video" href="https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06cff299-35f9-497f-8550-184dbe387330">Lecture video</a></li>
+      <li><a class="code" href="code/23-graphs.tgz">Code</a></li>
+      <!--li><a rel="tipsy" title="Lecture-2 slides: concept highlights only"
+             href="slides/inclass/dilsun-23-graphs.pdf">In-class slides</a></li-->
+    </ul>
+    </div>
+
+  </div>
+</div>

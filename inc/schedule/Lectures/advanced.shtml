@@ -1,0 +1,23 @@
+<div class="lecture-title">
+  Advanced Topic
+</div>
+
+<div class="lecture-summary">
+  The topic of this lecture will be determined on the basis of student and
+  staff interest.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <span class="lecture-material-caption caption-concepts"></span>
+    <ul class="lecture-material-list">
+    </ul>
+  </div>
+
+  <div class="readings-further">
+    <span  class="lecture-material-caption caption-further"></span>
+    <ul class="lecture-material-list">
+    </ul>
+  </div>
+
+</div>

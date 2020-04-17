@@ -1,0 +1,16 @@
+<div class="lecture-title">
+  C0 Basics
+</div>
+
+<div class="lecture-summary">
+  This recitation reviews elementary C0 constructs and practices
+  reasoning about code.
+</div>
+
+<div class="lecture-readings">
+  <div class="readings-concepts">
+    <ul class="lecture-material-list">
+    <li><a class="qatool">Exercises</a></li>
+    </ul>
+  </div>
+</div>

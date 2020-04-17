@@ -1,0 +1,16 @@
+<!--#include virtual="inc/top.shtml"-->
+
+<h1>OLI Modules for Lecture 2</h1>
+
+<p>
+  If prompted to authenticate, click on <b>CMU users sign in here</b>
+  and then enter your web login credentials.
+</p>
+
+<ol>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374b600a0001dc53e7e102f6bf0110">Representing Integers</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374b790a0001dc13d112679417352c">Fixed-Precision Integers</a></li>
+  <li><a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=91374b9c0a0001dc3e4366a9e21c784f">Bit Patterns</a></li>
+</ol>
+
+<!--#include virtual="inc/bottom.shtml"-->

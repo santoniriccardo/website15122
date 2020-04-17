@@ -1,0 +1,298 @@
+html {
+ background-image: url('../img/bg-geometric.gif');
+ background-color: lightgray;
+ text-align: center;
+}
+
+body {
+ XXposition: relative;
+ font-family: "Source Sans Pro", serif;
+ font-size: 90%;
+ background-color:#F4FEFF;
+ width:850px;   /* update to change width */
+ padding: 10px;
+ text-align: justify;
+ margin: 0px auto;
+ XXdisplay: inline-block;
+}
+@media screen { body { padding-top:50px; } }
+
+/* Styles for course name and logo */
+
+div.top {
+  XXtop:8px;
+  top: 0;
+  width:870px;   /* update to change width, == body.width + 20px */
+  opacity: 0.9; filter: alpha(opacity=90);
+  margin: 0px -10px;
+}
+@media screen { div.top {position: fixed; } }
+
+.title {
+  width:870px;   /* update to change width, == body.width + 20px */
+  background-color:#3333FF;
+  margin: 0px;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  font-size: 1.55em;
+  font-weight: bold;
+  color: GOLD;
+}
+
+.courseName {
+  vertical-align: middle;
+  width: 625px;
+  padding: 0;
+}
+td.logo {
+ text-align: right;
+ width: 0px;
+}
+img.logo {
+ padding-right: 5px;
+ border:none;
+ vertical-align: middle;
+ height:55px;
+}
+
+/* Styles for top level menus */
+
+ul.menu {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0px;
+}
+li.menu {
+  float:left;
+}
+a.menu {
+  display: block;
+  background-color: #0000EE;
+  color: YELLOW;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  XXwidth: 90px;
+  padding: 2px 19px;
+  border-right: 1px solid #F4FEFF;
+  text-decoration:none;
+}
+a.menu:hover {
+ color: GOLD;
+ background-color: darkblue;
+}
+
+/* Styles for sections, etc. */
+
+.shortcut {
+  margin-left:40px;
+  font-size: x-small;
+  font-weight:normal;
+  vertical-align:10%;
+ }
+
+h1 {
+ margin-top: 30px;
+ font-size: 1.5em;
+}
+
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -84px;
+  height: 84px;
+  visibility: hidden;
+}
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.0em;
+  margin-bottom: 1ex;
+}
+
+p, table, tr, td, ul, li {
+ font-size: 1em;
+}
+p {
+  margin-top: 0.75ex;
+  margin-bottom: 0.75ex;
+}
+li {
+  margin-bottom: 0.5ex;
+}
+ul, ol {
+  margin-top: 1ex;
+  margin-bottom: 0.25ex;
+}
+
+
+
+/* Subscripts and superscripts */
+.sub {
+  vertical-align: sub;
+  font-size: .83em;
+}
+.sup {
+  vertical-align: super;
+  font-size: .83em;
+}
+
+.feedback-ack {
+  width: 350px;
+  height: 130px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 130px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+}
+
+/* Styles for toggler */
+
+@media print {
+ .toggleon-mark, .toggleoff-mark {
+   display: none;
+ }
+}
+
+.toggleon-mark, .toggleoff-mark {
+ color: gray;
+ margin: 0ex 0em 0ex 0.3em;
+ padding: 0ex 0.2em;
+ text-align: right;
+}
+
+.toggleon-mark:hover, .toggleoff-mark:hover,
+.toggleon-mark:active, .toggleoff-mark:active {
+ color: black;
+}
+
+/* Display people pictures */
+
+.bubble {
+ border-bottom: dotted 1px lightgray;
+}
+div.people-pic {
+ Xdisplay: none;
+}
+img.people-pic {
+ height:70px;
+ width:70px;
+}
+
+.tip {
+ font-size: smaller;
+ text-align: justify;
+ Xline-height: 1.25em;
+ Xdisplay: none;
+ width: 300px;
+}
+
+
+/* Buttons to toggle descriptions and details on and off in scheduler */
+#buttons {
+  Xposition: fixed;
+  Xright: 0px;
+  Xtop: 111px;
+  position: absolute;
+  right: 2px;
+  top: 121px;
+  text-align: right;
+}
+#summary-button, #details-button, #practice-button {
+  color: red;
+}
+@media print {
+  #buttons { display: none; }
+  .checkin-button { display: none; }
+}
+
+#copyright:before {
+  content: "\00A9"; /* copyright symbol */
+  padding-right: 0.2em;
+}
+
+
+/* Progress markers for wiki articles */
+
+li.done {
+ color: green;
+ %color: darkgreen;
+}
+
+li.half {
+ color: orange;
+}
+
+li.todo {
+ color: red;
+}
+
+.resources {
+  border: 1px solid gray;
+  margin-top: 2ex;
+  margin-left: -1ex;
+  padding: 0.5ex 0 2ex 1ex;
+  background-color: lightyellow;
+}
+
+.caption-resources:before {
+  content: "Other resources:";
+}
+.caption-concepts:before {
+  content: "Concepts:";
+}
+.caption-further:before {
+  content: "Readings:";
+}
+.caption-exercises:before {
+  content: "Exercises:";
+}
+ul.lecture-material-other {
+  list-style-type: none;
+  padding: 0 0 1.5ex 0;
+}
+
+ul.lecture-material-other > li {
+  float:left;
+  margin: 0 1em;
+}
+
+a.video {
+  background-color: white;
+  border: 1px solid darkgray;
+  border-radius: 1ex;
+  padding: 0 0.5em;
+  text-decoration: none;
+ }
+
+a.code {
+  font-family: courier, monotype;
+}
+a.lab {
+  background-color: #E0EBEB;
+  padding: 0 0.5em;
+  text-decoration: none;
+ }
+
+.ical {
+  font-size: 80%;
+  font-weight: normal;
+  margin-left: 1em;
+}
+
+
+/* Past offerings */
+.offerings th, .offerings td {
+  text-align: center;
+  padding: 0.5ex 0.5em;
+}
+.offerings th {
+  background-color: lightgray;
+}
+.offerings td {
+  background-color: lightyellow;
+}

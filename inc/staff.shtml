@@ -1,0 +1,24 @@
+<!-- Inherits from calendar.css -->
+
+<img src="inc/img/people/STAFF.jpg"
+     style="width: 100%; margin-top: 30px; margin-bottom: -10px;">
+
+<h1 id="STAFF">Course Staff</h1>
+
+<h2>Mascot</h2>
+
+<script>document.write(printByRole("mascot"));</script>
+
+<h2>Instructors</h2>
+
+<script>document.write(printByRole("instructor"));</script>
+
+
+<h2>Course Administrative Assistant</h2>
+
+<script>document.write(printByRole("aa"));</script>
+
+
+<h2>Teaching Assistants</h2>
+
+<script>document.write(printByRole("ta"));</script>
